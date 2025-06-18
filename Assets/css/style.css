@@ -1,0 +1,54 @@
+    @font-face { font-family: 'Roboto'; src: url('/Assets/Noto_Sans_Gurmukhi/static/NotoSansGurmukhi_SemiCondensed-Regular.ttf') format('truetype'); }
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/* ======================= Reset & Base Styles start */
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+/* ======================= Reset & Base Styles end */
+
+/* header Area start  */
+.headerArea{
+    background: #00000d;
+    border-bottom: 1px solid #373a416e;
+    padding: 8px 0;
+    position: sticky;
+    top: 0;
+    
+}
+.headerArea .headerLogo img{
+    width: 80px;
+}
+.headerArea nav ul{
+    gap: 0 40px;
+    margin: 0;
+}
+.headerArea nav ul li a {
+	/* color: #808080; */
+	/* color: #ff6d4d; */
+	color: #fff;
+	font-size: 17px;
+	font-weight: 600;
+    
+}
+.headerArea nav ul li:hover a{
+    color: #003efa;
+}
+/* header Area end  */
+
+/* hero Area Start  */
+.heroArea{
+    width: 100%;
+    padding: 280px 0;
+    background-image: url(/Assets/images/jHfCQrtU9fGdWqRu58IKftT2rs.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/* hero Area End */
