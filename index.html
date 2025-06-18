@@ -4,15 +4,19 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <!-- CSS Link Up Start -->
+    <!-- fontawesome Start -->
+    <link rel="stylesheet" href="Assets/css/all.min.css" />
+    <link rel="stylesheet" href="Assets/css/fontawesome.min.css" />
+    <!-- fontawesome End -->
+    <!-- Bootstrap Start -->
     <link rel="stylesheet" href="Assets/css/bootstrap.min.css" />
-    <!-- CSS Link Up End -->
-    <!-- Bootstrap Start  -->
+    <!-- Bootstrap End -->
+    <!-- Main CSS Start  -->
     <link rel="stylesheet" href="Assets/css/style.css" />
-    <!-- Bootstrap End  -->
+    <!-- Main CSS End  -->
   </head>
   <body>
-    <!-- Navigation Menu Section Start -->
+    <!--Header section Start -->
     <header class="headerArea">
       <div class="container">
         <div class="row">
@@ -21,7 +25,7 @@
               <img src="Assets/images/DarkGreenModern02.png" alt="DarkGreenModern02.png" />
             </div>
           </div>
-          <div class="col-lg-10 d-flex align-items-center justify-content-end">
+          <div class="col-lg-8 d-flex align-items-center justify-content-center">
             <nav>
               <ul class="d-flex">
                 <li><a href="#">Home</a></li>
@@ -33,17 +37,49 @@
               </ul>
             </nav>
           </div>
+          <div class="col-lg-2 d-flex align-items-center">
+            <div class="NavigationRight">
+              <ul>
+                <li data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop"><i class="fa-solid fa-magnifying-glass"> </i></li>
+
+                <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
+                  <div class="offcanvas-header">
+                    <li class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></li>
+                  </div>
+                  <div class="offcanvas-body">
+                    <div class="search-container">
+                      <input type="text" class="search-input" placeholder="Search events..." />
+                      <button class="search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+                    </div>
+                  </div>
+                </div>
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
     </header>
-    <!-- Navigation Menu Section End -->
+    <!--Header section End -->
 
     <!-- Hero Section Start -->
     <section class="heroArea">
       <div class="container">
         <div class="row">
-          <div class="col-lg-6"></div>
-          <div class="col-lg-6"></div>
+          <!-- <div class="col-lg-6"></div>
+          <div class="col-lg-6"></div> -->
+          <div class="col-lg-12">
+            <div class="heroContent">
+              <div class="heroOverlay"></div>
+              <div class="heroInfo">
+                <h1>Your Event, Our Passion</h1>
+                <p>We bring your vision to life with creativity and precision.</p>
+                <div class="buttons">
+                  <a href="#services" class="btn-primary">Explore Services</a>
+                  <a href="#contact" class="btn-secondary">Get a Quote</a>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
