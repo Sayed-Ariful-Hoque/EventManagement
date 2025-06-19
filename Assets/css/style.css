@@ -10,10 +10,10 @@
 /* ======================= Reset & Base Styles start */
 
 :root {
-    --primary-color: #003efa;
-    --secondary-color: #277439;
-    --white-color: #fff;
-    --black-color:#000;
+  --primary-color: #003efa;
+  --secondary-color: #277439;
+  --white-color: #fff;
+  --black-color: #00000d;
 }
 li {
   list-style: none;
@@ -25,7 +25,7 @@ a {
 
 /* header Area start  */
 .headerArea {
-  background: #00000d;
+  background: var(--black-color);
   border-bottom: 1px solid #373a416e;
   padding: 8px 0;
   position: sticky;
@@ -49,28 +49,34 @@ a {
 .headerArea nav ul li:hover a {
   color: var(--primary-color);
 }
-.NavigationRight ul{
-    margin: 0;
+.NavigationRight {
+  gap: 0 30px;
+}
+.NavigationRight ul {
+  margin: 0;
 }
 .NavigationRight ul li {
   color: var(--white-color);
-    transition: all ease 0.4s;
+  transition: all ease 0.4s;
 }
 .NavigationRight ul li:hover {
-    color: var(--primary-color);
+  color: var(--primary-color);
 }
 
 /* .search-btn  */
 
 .search-container {
-	position: relative;
-	width: 50%;
-	margin: 0 auto;
-	background: var(--black-color);
-	border-radius: 50px;
-	display: flex;
-	align-items: center;
-	padding: 10px 15px;
+  position: relative;
+  width: 50%;
+  margin: 0 auto;
+  background: var(--black-color);
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  padding: 10px 15px;
+}
+.search-container:hover .search-btn {
+  color: #277439;
 }
 .search-input {
   flex: 1;
@@ -88,8 +94,37 @@ a {
   cursor: pointer;
   transition: transform 0.3s ease;
 }
-.close-bnt{
-  margin-left: auto;
+.close-bnt {
+	margin-left: auto;
+	background: transparent;
+	border: none;
+  color: var(--black-color);
+}
+
+/* SideBar  */
+.sideBar li {
+  color: var(--white-color);
+}
+.sideBar .offcanvas-header {
+  background: #08181d;
+  background: linear-gradient(380deg, #092c11, #23366c, #173d27,);
+}
+ .sideBar .close-bnt{
+  color: var(--white-color);
+ }
+ .sideBar .offcanvas-body{
+margin-top: 10px;
+}
+.sideBar .offcanvas-body h3 {
+	font-size: 22px;
+	font-weight: 600;
+	line-height: 1.4;
+}
+.sideBar .offcanvas-body p {
+	font-size: 16px;
+	line-height: 1.6;
+	font-weight: 600;
+	text-align: justify;
 }
 /* header Area end  */
 
@@ -119,4 +154,3 @@ a {
   transform: translateY(-50%) translateX(-50%);
 }
 /* hero Area End */
-

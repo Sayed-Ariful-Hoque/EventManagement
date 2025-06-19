@@ -37,23 +37,62 @@
               </ul>
             </nav>
           </div>
-          <div class="col-lg-2 d-flex align-items-center">
-            <div class="NavigationRight">
+          <div class="col-lg-2 d-flex align-items-center justify-content-end">
+            <div class="NavigationRight d-flex align-items-center">
               <ul>
                 <li data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop"><i class="fa-solid fa-magnifying-glass"> </i></li>
 
                 <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
                   <div class="offcanvas-header">
-                    <li class="close-bnt text-reset" data-bs-dismiss="offcanvas"><i class="fa-solid fa-circle-xmark"></i></li>
+                    <button type="button" class="close-bnt text-reset" data-bs-dismiss="offcanvas"><i class="fa-solid fa-circle-xmark"></i></button>
                   </div>
                   <div class="offcanvas-body">
                     <div class="search-container">
-                      <input type="text" class="search-input" placeholder="Search events..." autofocus=""/>
+                      <input type="text" class="search-input" placeholder="Search events..." autofocus="" />
                       <button class="search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
                     </div>
                   </div>
                 </div>
               </ul>
+              <div class="sideBar">
+                <li data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i class="fa-solid fa-bars"></i></li>
+
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                  <div class="offcanvas-header">
+                    <div class="headerLogo">
+                      <img src="Assets/images/DarkGreenModern02.png" alt="DarkGreenModern02.png" />
+                    </div>
+                    <button type="button" class="close-bnt" data-bs-dismiss="offcanvas" aria-label="Close"><i class="fa-solid fa-circle-xmark"></i></button>
+                  </div>
+                  <div class="offcanvas-body">
+                    <h3>About Us</h3>
+                    <p>We are a premier event management company turning visions into unforgettable experiences. From corporate functions to personal celebrations, we deliver seamless planning and creative execution. Trust our expert team to handle every detail—so you can enjoy the moment stress-free.</p>
+                    <div class="contactInfo">
+                      <div class="contactItems">
+                        <span><i class="fa-solid fa-phone"></i></span>
+                        <div class="contactDetails">
+                          <h5>Connect with Us 24/7</h5>
+                          <p><a href="tel:+88 01714001209">+88 01714001209</a></p>
+                        </div>
+                      </div>
+                      <div class="contactItems">
+                        <span><i class="fa-solid fa-envelope"></i></span>
+                        <div class="contactDetails">
+                          <h5>Mail Your Ideas</h5>
+                          <p><a href="mailto:info@emythmakers.com">info@emythmakers.com</a></p>
+                        </div>
+                      </div>
+                      <div class="contactItems">
+                        <span><i class="fa-solid fa-location-dot"></i></span>
+                        <div class="contactDetails">
+                          <h5>Our Locations</h5>
+                          <p>24 Uttar Kafrul, 3rd Floor, Dhaka-1206, Bangladesh</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
