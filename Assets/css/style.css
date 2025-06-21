@@ -95,9 +95,9 @@ a {
   transition: transform 0.3s ease;
 }
 .close-bnt {
-	margin-left: auto;
-	background: transparent;
-	border: none;
+  margin-left: auto;
+  background: transparent;
+  border: none;
   color: var(--black-color);
 }
 
@@ -107,73 +107,166 @@ a {
 }
 .sideBar .offcanvas-header {
   background: #08181d;
-  background: linear-gradient(380deg, #092c11, #23366c, #173d27,);
+  background: linear-gradient(380deg, #092c11, #23366c, #173d27);
 }
- .sideBar .close-bnt{
+.sideBar .close-bnt {
   color: var(--white-color);
- }
- .sideBar .offcanvas-body{
-margin-top: 10px;
+}
+.sideBar .offcanvas-body {
+  margin-top: 10px;
 }
 .sideBar .offcanvas-body h3 {
-	font-size: 22px;
-	font-weight: 600;
-	line-height: 1.4;
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 1.4;
 }
 .sideBar .offcanvas-body p {
-	font-size: 16px;
-	line-height: 1.6;
-	font-weight: 600;
-	text-align: justify;
+  font-size: 16px;
+  line-height: 1.6;
+  font-weight: 600;
+  text-align: justify;
 }
 .sideBar .contactInfo {
-	margin-top: 40px;
+  margin-top: 40px;
 }
 .sideBar .contactInfo .contactItems {
   gap: 0 20px;
-	border-bottom: 1px solid #ddd;
-	margin-bottom: 15px;
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 15px;
 }
 .sideBar .contactInfo .contactItems h5 {
-	font-size: 17px;
-	line-height: 1.5;
-	font-weight: 600;
+  font-size: 17px;
+  line-height: 1.5;
+  font-weight: 600;
 }
-.sideBar .contactInfo .contactItems a, .sideBar .contactInfo .contactItems p {
-	font-size: 15px;
-	line-height: 1.5;
-	font-weight: 600;
-	color: #00000d8c;
-  transition: all ease .4s;
+.sideBar .contactInfo .contactItems a,
+.sideBar .contactInfo .contactItems p {
+  font-size: 15px;
+  line-height: 1.5;
+  font-weight: 600;
+  color: #00000d8c;
+  transition: all ease 0.4s;
 }
-.sideBar .contactInfo .contactItems a:hover{
+.sideBar .contactInfo .contactItems a:hover {
   color: var(--secondary-color);
 }
+.socialMedia{
+  padding: 25px 0;
+}
+.socialMedia ul {
+  gap: 15px;
+  padding: 0;
+  margin: 0;
+}
+
+.socialMedia ul li a {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #222;
+  color: var(--white-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  text-decoration: none;
+  transition: all 0.4s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  position: relative;
+}
+.socialMedia ul li a:hover {
+  transform: scale(1.2) rotate(15deg);
+  background-color: var(--primary-color);
+    color: var(--white-color);
+  box-shadow: 0 0 8px var(--white-color), 0 0 15px currentColor, 0 0 25px currentColor;
+}
+
 /* header Area end  */
 
 /* hero Area Start  */
-.heroArea {
-  width: 100%;
-  height: 90vh;
-  background-image: url(/Assets/images/jHfCQrtU9fGdWqRu58IKftT2rs.webp);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  color: #fff;
+
+.hero-slider {
   position: relative;
+  height: 100vh;
+  overflow: hidden;
 }
-.heroOverlay {
-  background: rgba(0, 0, 0, 0.5);
+.slide {
   position: absolute;
-  top: 0;
-  left: 0;
   width: 100%;
   height: 100%;
+  background-size: cover;
+  background-position: center;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.heroInfo {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translateY(-50%) translateX(-50%);
+
+.slide.active {
+  opacity: 1;
+  z-index: 2;
 }
+
+.hero-content {
+  text-align: center;
+  color: white;
+  max-width: 800px;
+  animation: fadeIn 1.2s ease-in-out;
+}
+
+.hero-content h1 {
+  font-size: 52px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.hero-content h1 span {
+  color: #00ccff;
+}
+
+.hero-content p {
+  font-size: 18px;
+  color: #ccc;
+  margin-bottom: 30px;
+}
+
+.hero-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.btn {
+  padding: 12px 28px;
+  border-radius: 6px;
+  background-color: #0066ff;
+  color: #fff;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.btn.outline {
+  background: transparent;
+  border: 2px solid #00ccff;
+  color: #00ccff;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 /* hero Area End */
