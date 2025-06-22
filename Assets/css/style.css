@@ -14,12 +14,28 @@
   --secondary-color: #277439;
   --white-color: #fff;
   --black-color: #00000d;
+  --border-color: #cacaca50;
+  --primary-liner-Gradent-color:linear-gradient(90deg, #11ff63, #24838d, #d10c7c);
+  --secondary-liner-Gradent-color:linear-gradient(360deg, #11ff63, #24838d, #d10c7c);
 }
 li {
   list-style: none;
 }
 a {
   text-decoration: none;
+}
+.primaryBtn{
+	/* border:1px solid var(--border-color); */
+  background: var(--primary-liner-Gradent-color);
+	border-radius: 5px;
+	padding: 7px 30px;
+	color: var(--white-color);
+  font-weight: 600;
+  line-height: 1.5;
+  letter-spacing: 1px;
+}
+.primaryBtn:hover{
+  background: var(--secondary-liner-Gradent-color);
 }
 /* ======================= Reset & Base Styles end */
 
@@ -219,37 +235,37 @@ a {
   color: white;
   text-align: center;
   width: 100%;
-  padding: 0 170px;
+  padding: 0 200px;
   z-index: 10;
   user-select: none;
 }
-
+.slider-captions h5 {
+	font-size: 15px;
+	line-height: 1.5;
+  color: #fe6234;
+  display: inline-block;
+  border-radius: 10px 90px 30px 90px;
+	margin-bottom: 15px;
+}
 .slider-captions h1 {
-  font-size: 3.5rem;
-  font-weight: 700;
-  text-shadow: 0 0 15px rgba(0, 0, 0, 0.8);
-  margin-bottom: 1rem;
+	font-weight: 700;
+	text-shadow: 0 0 15px rgba(0, 0, 0, 0.8);
+	font-size: 40px;
+  line-height: 1.5;
+	margin-bottom: 15px;
 }
 
 .slider-captions p {
-  font-size: 1.4rem;
-  max-width: 700px;
-  margin: 0 auto;
-  text-shadow: 0 0 12px rgba(0, 0, 0, 0.7);
+	font-size: 16px;
+	line-height: 1.5;
+	margin-bottom: 20px;
+	font-weight: normal;
 }
-
-/* Slick dots customization */
-.slick-dots {
-  bottom: 20px;
-}
-.slick-dots li button:before {
-  font-size: 14px;
-  color: white;
-  opacity: 0.6;
-}
-.slick-dots li.slick-active button:before {
-  opacity: 1;
-  color: #f8f9fa;
+.slider-captions .heroBtn{
+  margin-top: 50px;
+  display: flex;
+  gap: 0 20px;
+  justify-content: center;
 }
 .slick-arrow {
   z-index: 20;
@@ -273,7 +289,7 @@ a {
 
 .slick-arrow {
   margin-left: 60px;
-  background: linear-gradient(90deg, #11ff63, #24838d, #d10c7c);
+  background: var(--primary-liner-Gradent-color);
 }
 .slick-next {
   right: 60px;
@@ -285,6 +301,14 @@ a {
 .slick-prev:focus,
 .slick-next:hover,
 .slick-next:focus {
-  background: linear-gradient(360deg, #11ff63, #24838d, #d10c7c);
+  background: var(--secondary-liner-Gradent-color);
 }
+
 /* hero Area End */
+
+
+/* footer Area start  */
+footer{
+  background: var(--black-color);
+}
+/* footer Area End  */
