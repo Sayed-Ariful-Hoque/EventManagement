@@ -24,3 +24,12 @@ Fancybox.bind("[data-fancybox='photo-gallery-wrap']", {
   hideClass: "fancybox-fadeOut",
 });
 // Fancybox JS End
+
+// section Animation  Js Start
+AOS.init({
+    once: true,          
+    offset: 100,
+    duration: 1200,
+    easing: 'ease-in-out'
+});
+// section Animation  Js End

@@ -15,16 +15,17 @@
     <link rel="stylesheet" href="Assets/css/slick.css" />
     <link rel="stylesheet" href="Assets//css/slick-theme.css" />
     <!-- slick End -->
-     <!-- Fancybox CSS Start-->
+    <!-- Fancybox CSS Start-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" />
-        <!-- Fancybox CSS End-->
+    <!-- Fancybox CSS End-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <!-- Main CSS Start  -->
     <link rel="stylesheet" href="Assets/css/style.css" />
     <!-- Main CSS End  -->
   </head>
   <body>
     <!--Header section Start -->
-     <header class="headerArea">
+    <header class="headerArea">
       <div class="container">
         <div class="row">
           <div class="col-lg-2 d-flex align-items-center">
@@ -39,6 +40,7 @@
               <ul class="d-flex">
                 <li><a href="#">Home</a></li>
                 <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
                 <li><a href="#">Event</a></li>
                 <li><a href="#">pages</a></li>
                 <li><a href="#">Blog</a></li>
@@ -125,10 +127,10 @@
           </div>
         </div>
       </div>
-     </header>
+    </header>
     <!--Header section End -->
     <!-- Hero Section Start -->
-     <section class="hero-area">
+    <section class="hero-area">
       <div class="container-fluid p-0">
         <div class="row g-0">
           <div class="col-12">
@@ -143,23 +145,31 @@
                   <h1>Beach paradise hotel & Resort PLC in Cox-Bazar</h1>
                   <p>Enjoying the beach and jungle greenery. In our resort, you'll get our great service, friendly staff and great seaside.</p>
                   <div class="heroBtn">
-                    <a class="primaryBtn" href="#">Registration</a>
-                    <a class="primaryBtn" href="#">Schedule Overview</a>
+                    <div class="btn-wrapper text-center">
+                      <a class="common-btn" href="">Registration</a>
+                    </div>
+                    <div class="btn-wrapper text-center">
+                      <a class="common-btn" href="">Schedule Overview</a>
+                    </div>
                   </div>
                 </div>
               </div>
               <div class="items">
                 <div class="slider-img">
                   <img src="Assets/images/home-page/slider/hero-slider-3.jpg" alt="Slide 2" />
-                   <div class="overlay-slider"></div>
+                  <div class="overlay-slider"></div>
                 </div>
                 <div class="slider-captions">
                   <h5>UPCOMING NEW EVENT 30 November, 2025</h5>
                   <h1>Beach paradise hotel & Resort PLC in Cox-Bazar</h1>
                   <p>Enjoying the beach and jungle greenery. In our resort, you'll get our great service, friendly staff and great seaside.</p>
                   <div class="heroBtn">
-                    <a class="primaryBtn" href="#">Registration</a>
-                    <a class="primaryBtn" href="#">Schedule Overview</a>
+                    <div class="btn-wrapper text-center">
+                      <a class="common-btn" href="">Registration</a>
+                    </div>
+                    <div class="btn-wrapper text-center">
+                      <a class="common-btn" href="">Schedule Overview</a>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -173,8 +183,12 @@
                   <h1>Beach paradise hotel & Resort PLC in Cox-Bazar</h1>
                   <p>Enjoying the beach and jungle greenery. In our resort, you'll get our great service, friendly staff and great seaside.</p>
                   <div class="heroBtn">
-                    <a class="primaryBtn" href="#">Registration</a>
-                    <a class="primaryBtn" href="#">Schedule Overview</a>
+                    <div class="btn-wrapper text-center">
+                      <a class="common-btn" href="">Registration</a>
+                    </div>
+                    <div class="btn-wrapper text-center">
+                      <a class="common-btn" href="">Schedule Overview</a>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -182,131 +196,313 @@
           </div>
         </div>
       </div>
-     </section>
+    </section>
     <!-- Hero Section End -->
     <!-- about us Area start  -->
-     <section class="about-us-area">
-      <div class="row">
-        <div class="col-lg-6">
-          
+    <section class="about-us-area" data-aos="fade-up" data-aos-duration="1000">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12" data-aos="zoom-in" data-aos-delay="100">
+            <div class="section-hedding">
+              <h3>About Us</h3>
+            </div>
+          </div>
         </div>
-      </div>
-     </section>
-    <!-- about us Area start  -->
-    <!-- photo-gallery area Start -->
-      <section class="photo-gallery">
-            <div class="container">
-              <div class="row">
-                <div class="col-lg-12">
-                  <div class="section-hedding">
-                    <h3>photo gallery</h3>
+        <div class="about-us-warp">
+          <div class="row">
+            <div class="col-lg-7" data-aos="fade-right" data-aos-delay="200">
+              <div class="about-us-event-info">
+                <h5>About Event Planning</h5>
+                <div class="about-us-list" data-aos="fade-up" data-aos-delay="300">
+                  <div class="row">
+                    <div class="col-lg-7 d-flex align-items-center">
+                      <div class="about-content">
+                        <p>We are a professional event management company, dedicated to creating memorable experiences through planning, creativity, and flawless execution for every occasion.</p>
+                      </div>
+                    </div>
+                    <div class="col-lg-2 text-center d-flex align-items-center">
+                      <div class="company-counter-number">
+                        <p>
+                          10 <span><i class="fa-solid fa-plus"></i></span>
+                        </p>
+                      </div>
+                    </div>
+                    <div class="col-lg-3 text-center d-flex align-items-center">
+                      <div class="company-counter-title">
+                        <p>Years of Experience</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="about-us-list" data-aos="fade-up" data-aos-delay="400">
+                  <div class="row">
+                    <div class="col-lg-7 d-flex align-items-center">
+                      <div class="about-content">
+                        <p>Creating memorable moments while taking care of all difficulties, so clients can fully enjoy their events</p>
+                      </div>
+                    </div>
+                    <div class="col-lg-2 text-center d-flex align-items-center">
+                      <div class="company-counter-number">
+                        <p>
+                          90 <span><i class="fa-solid fa-plus"></i></span>
+                        </p>
+                      </div>
+                    </div>
+                    <div class="col-lg-3 text-center d-flex align-items-center">
+                      <div class="company-counter-title">
+                        <p>successfully completed</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="about-us-list" data-aos="fade-up" data-aos-delay="450">
+                  <div class="row">
+                    <div class="col-lg-7 d-flex align-items-center">
+                      <div class="about-content">
+                        <ul>
+                          <li>
+                            <strong><i class="fa-solid fa-calendar-check"></i></strong> planning from start to finish
+                          </li>
+                          <li>
+                            <strong><i class="fa-solid fa-calendar-check"></i></strong> Creative and customized event designs
+                          </li>
+                          <li>
+                            <strong><i class="fa-solid fa-calendar-check"></i></strong> Budget-friendly solutions without compromise
+                          </li>
+                          <li>
+                            <strong><i class="fa-solid fa-calendar-check"></i></strong> Experienced team ensuring flawless execution
+                          </li>
+                          <li>
+                            <strong><i class="fa-solid fa-calendar-check"></i></strong> 24/7 support for all client needs
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="col-lg-2 text-center d-flex align-items-center">
+                      <div class="company-counter-number">
+                        <p>
+                          98 <span><i class="fa-solid fa-plus"></i></span>
+                        </p>
+                      </div>
+                    </div>
+                    <div class="col-lg-3 text-center d-flex align-items-center">
+                      <div class="company-counter-title">
+                        <p>Events attended</p>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
-                <div class="photo-gallery-wrap">
-                  <div class="row">
-                    <div class="col-lg-3">
-                      <div class="photo-gallery-items">
-                        <a href="Assets/images/photoGallary/photo-gallery-9.jpg"data-fancybox="gallery">
-                          <img class="img-fluid" src="Assets/images/photoGallary/photo-gallery-9.jpg" alt="Image 9"/>
-                          <div class="photo-gallery-info">
-                            <h2>Kids at Party</h2>
-                            <p>Kids enjoying games, balloons, cake, and laughter at birthday party.</p>
-                          </div>
-                        </a>
-                      </div>
-                    </div>
-                    <div class="col-lg-3">
-                      <div class="photo-gallery-items">
-                        <a href="Assets/images/photoGallary/photo-gallery-2.jpg"data-fancybox="gallery">
-                          <img class="img-fluid" src="Assets/images/photoGallary/photo-gallery-2.jpg" alt="Image 2"/>
-                          <div class="photo-gallery-info">
-                            <h2>Corporate Events</h2>
-                            <p>corporate events, product launches</p>
-                          </div>
-                        </a>
-                      </div>
-                    </div>
-                    <div class="col-lg-3">
-                      <div class="photo-gallery-items">
-                        <a href="Assets/images/photoGallary/photo-gallery-3.jpg"data-fancybox="gallery">
-                          <img class="img-fluid" src="Assets/images/photoGallary/photo-gallery-3.jpg" alt="Image 3"/>
-                          <div class="photo-gallery-info">
-                            <h2>wedding events</h2>
-                            <p>a media organization known for producing short videos on political, economic, and philosophical topics.</p>
-                          </div>
-                        </a>
-                      </div>
-                    </div>
-                    <div class="col-lg-3">
-                      <div class="photo-gallery-items">
-                        <a href="Assets/images/photoGallary/photo-gallery-4.jpg"data-fancybox="gallery">
-                          <img class="img-fluid" src="Assets/images/photoGallary/photo-gallery-4.jpg" alt="Image 4"/>
-                          <div class="photo-gallery-info">
-                            <h2>proposal events</h2>
-                            <p>proposal events, social meetings, wedding events</p>
-                          </div>
-                        </a>
-                      </div>
-                    </div>
-                    <div class="col-lg-3">
-                      <div class="photo-gallery-items">
-                        <a href="Assets/images/photoGallary/photo-gallery-5.jpg"data-fancybox="gallery">
-                          <img class="img-fluid" src="Assets/images/photoGallary/photo-gallery-5.jpg" alt="Image 5"/>
-                          <div class="photo-gallery-info">
-                            <h2>wedding events</h2>
-                            <p>a media organization known for producing short videos on political, economic, and philosophical topics.</p>
-                          </div>
-                        </a>
-                      </div>
-                    </div>
-                    <div class="col-lg-3">
-                      <div class="photo-gallery-items">
-                        <a href="Assets/images/photoGallary/photo-gallery-6.jpg"data-fancybox="gallery">
-                          <img class="img-fluid" src="Assets/images/photoGallary/photo-gallery-6.jpg" alt="Image 6"/>
-                          <div class="photo-gallery-info">
-                            <h2>proposal events</h2>
-                            <p>Romantic setting with candles, flowers, heartfelt words, and joyful acceptance.</p>
-                          </div>
-                        </a>
-                      </div>
-                    </div>
-                    <div class="col-lg-3">
-                      <div class="photo-gallery-items">
-                        <a href="Assets/images/photoGallary/photo-gallery-7.jpg"data-fancybox="gallery">
-                          <img class="img-fluid" src="Assets/images/photoGallary/photo-gallery-7.jpg" alt="Image 7"/>
-                          <div class="photo-gallery-info">
-                            <h2>social meetings</h2>
-                            <p>People networking, sharing ideas, building connections, and enjoying friendly conversations.</p>
-                          </div>
-                        </a>
-                      </div>
-                    </div>
-                    <div class="col-lg-3">
-                      <div class="photo-gallery-items">
-                        <a href="Assets/images/photoGallary/photo-gallery-8.jpg"data-fancybox="gallery">
-                          <img class="img-fluid" src="Assets/images/photoGallary/photo-gallery-8.jpg" alt="Image 8"/>
-                          <div class="photo-gallery-info">
-                            <h2>birthday parties</h2>
-                            <p>Friends and family celebrating with cake, balloons, music, laughter, and gifts.</p>
-                          </div>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
             </div>
-      </section>
+            <div class="col-lg-5" data-aos="fade-left" data-aos-delay="300">
+              <div class="about-us-event-Imgs">
+                <img src="Assets/images/home-page/about/about-2.jpg" alt="about-1.jpg" />
+              </div>
+            </div>
+            <div class="col-lg-12" data-aos="zoom-in" data-aos-delay="500">
+              <div class="btn-wrapper text-center">
+                <a class="common-btn" href="">Learn More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- about us Area End  -->
+    <!-- service area Start  -->
+    <section class="services-area">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12" data-aos="zoom-in" data-aos-delay="100">
+            <div class="section-hedding">
+              <h3>Our Services</h3>
+            </div>
+          </div>
+        </div>
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-3 d-flex">
+            <div class="service-items text-center">
+              <div class="service-icon"><i class="fas fa-ring"></i></div>
+              <h5>Wedding Planning</h5>
+              <p>We create unforgettable weddings with perfect planning, elegant decor, and seamless coordination.</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex">
+            <div class="service-items text-center">
+              <div class="service-icon">
+                <i class="fas fa-building"></i>
+              </div>
+              <h5>Corporate Events</h5>
+              <p>Professional event management for conferences, seminars, and corporate gatherings with attention to every detail.</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex">
+            <div class="service-items text-center">
+              <div class="service-icon"><i class="fas fa-birthday-cake"></i></div>
+              <h5>Birthday Parties</h5>
+              <p>Fun-filled and memorable birthday celebrations tailored for kids, teens, and adults alike.</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex">
+            <div class="service-items text-center">
+              <div class="service-icon"><i class="fas fa-music"></i></div>
+              <h5>Concerts & Festivals</h5>
+              <p>Organizing large-scale concerts and festivals with flawless execution and electrifying experiences.</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex">
+            <div class="service-items text-center">
+              <div class="service-icon"><i class="fas fa-camera"></i></div>
+              <h5>Photography & Videography</h5>
+              <p>Capturing every special moment with high-quality photography and cinematic videography services.</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex">
+            <div class="service-items text-center">
+              <div class="service-icon"><i class="fas fa-paint-brush"></i></div>
+              <h5>Event Decoration</h5>
+              <p>Stunning event decor designed to match themes, colors, and client preferences perfectly.</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex">
+            <div class="service-items text-center">
+              <div class="service-icon"><i class="fas fa-users"></i></div>
+              <h5>Team Building Events</h5>
+              <p>Engaging activities and events to strengthen teamwork, communication, and collaboration among employees.</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex">
+            <div class="service-items text-center">
+              <div class="service-icon"><i class="fas fa-glass-cheers"></i></div>
+              <h5>Private Parties</h5>
+              <p>Exclusive private gatherings and celebrations tailored to your personal style and preferences for a perfect event.</p>
+            </div>
+          </div>
+          <div class="col-lg-12" data-aos="zoom-in" data-aos-delay="500">
+            <div class="btn-wrapper text-center">
+              <a class="common-btn" href="">Learn More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- service area End  -->
+    <!-- photo-gallery area Start -->
+    <section class="photo-gallery" data-aos="fade-up" data-aos-duration="1000">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12" data-aos="zoom-in" data-aos-delay="100">
+            <div class="section-hedding">
+              <h3>photo gallery</h3>
+            </div>
+          </div>
+        </div>
+        <div class="photo-gallery-wrap">
+          <div class="row g-3">
+            <div class="col-lg-3" data-aos="fade-up" data-aos-delay="300">
+              <div class="photo-gallery-items">
+                <a href="Assets/images/photoGallary/photo-gallery-9.jpg" data-fancybox="gallery">
+                  <img class="img-fluid" src="Assets/images/photoGallary/photo-gallery-9.jpg" alt="Image 9" />
+                  <div class="photo-gallery-info">
+                    <h2>Kids at Party</h2>
+                    <p>Kids enjoying games, balloons, cake, and laughter at birthday party.</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="col-lg-3" data-aos="fade-up" data-aos-delay="500">
+              <div class="photo-gallery-items">
+                <a href="Assets/images/photoGallary/photo-gallery-2.jpg" data-fancybox="gallery">
+                  <img class="img-fluid" src="Assets/images/photoGallary/photo-gallery-2.jpg" alt="Image 2" />
+                  <div class="photo-gallery-info">
+                    <h2>Corporate Events</h2>
+                    <p>corporate events, product launches</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="col-lg-3" data-aos="fade-up" data-aos-delay="200">
+              <div class="photo-gallery-items">
+                <a href="Assets/images/photoGallary/photo-gallery-3.jpg" data-fancybox="gallery">
+                  <img class="img-fluid" src="Assets/images/photoGallary/photo-gallery-3.jpg" alt="Image 3" />
+                  <div class="photo-gallery-info">
+                    <h2>wedding events</h2>
+                    <p>a media organization known for producing short videos on political, economic, and philosophical topics.</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="col-lg-3" data-aos="fade-up" data-aos-delay="700">
+              <div class="photo-gallery-items">
+                <a href="Assets/images/photoGallary/photo-gallery-4.jpg" data-fancybox="gallery">
+                  <img class="img-fluid" src="Assets/images/photoGallary/photo-gallery-4.jpg" alt="Image 4" />
+                  <div class="photo-gallery-info">
+                    <h2>proposal events</h2>
+                    <p>proposal events, social meetings, wedding events</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="col-lg-3" data-aos="fade-up" data-aos-delay="400">
+              <div class="photo-gallery-items">
+                <a href="Assets/images/photoGallary/photo-gallery-5.jpg" data-fancybox="gallery">
+                  <img class="img-fluid" src="Assets/images/photoGallary/photo-gallery-5.jpg" alt="Image 5" />
+                  <div class="photo-gallery-info">
+                    <h2>wedding events</h2>
+                    <p>a media organization known for producing short videos on political, economic, and philosophical topics.</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="col-lg-3" data-aos="fade-up" data-aos-delay="500">
+              <div class="photo-gallery-items">
+                <a href="Assets/images/photoGallary/photo-gallery-6.jpg" data-fancybox="gallery">
+                  <img class="img-fluid" src="Assets/images/photoGallary/photo-gallery-6.jpg" alt="Image 6" />
+                  <div class="photo-gallery-info">
+                    <h2>proposal events</h2>
+                    <p>Romantic setting with candles, flowers, heartfelt words, and joyful acceptance.</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="col-lg-3" data-aos="fade-up" data-aos-delay="300">
+              <div class="photo-gallery-items">
+                <a href="Assets/images/photoGallary/photo-gallery-7.jpg" data-fancybox="gallery">
+                  <img class="img-fluid" src="Assets/images/photoGallary/photo-gallery-7.jpg" alt="Image 7" />
+                  <div class="photo-gallery-info">
+                    <h2>social meetings</h2>
+                    <p>People networking, sharing ideas, building connections, and enjoying friendly conversations.</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="col-lg-3" data-aos="fade-up" data-aos-delay="100">
+              <div class="photo-gallery-items">
+                <a href="Assets/images/photoGallary/photo-gallery-8.jpg" data-fancybox="gallery">
+                  <img class="img-fluid" src="Assets/images/photoGallary/photo-gallery-8.jpg" alt="Image 8" />
+                  <div class="photo-gallery-info">
+                    <h2>birthday parties</h2>
+                    <p>Friends and family celebrating with cake, balloons, music, laughter, and gifts.</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <!-- photo-gallery area -->
 
     <!-- footer section start  -->
-     <footer>
+    <footer>
       <div class="container">
         <div class="row">
           <div class="col-lg-3">
             <div class="footer-about">
               <div class="footer-info">
-                <h3 class="footer-caption">About Event</h3>
+                <h5 class="footer-caption">About Event</h5>
                 <p>About Event highlights the purpose, key activities, and impact, bringing people together to celebrate, learn</p>
               </div>
               <div class="socialMedia">
@@ -333,78 +529,92 @@
           <div class="col-lg-4">
             <div class="footer-about">
               <div class="footer-info">
-                <h3 class="footer-caption">Event Gallery</h3>
+                <h5 class="footer-caption">Event Gallery</h5>
               </div>
               <div class="footer-gallery-event">
-                <div class="row">
-                    <div class="col-lg-4">
-                      <div class="photo-gallery-items">
-                        <a href="Assets/images/photoGallary/photo-gallery-9.jpg"data-fancybox="gallery">
-                          <img class="img-fluid" src="Assets/images/photoGallary/photo-gallery-9.jpg" alt="Image 9"/>
-                        </a>
-                      </div>
-                    </div>
-                    <div class="col-lg-4">
-                      <div class="photo-gallery-items">
-                        <a href="Assets/images/photoGallary/photo-gallery-2.jpg"data-fancybox="gallery">
-                          <img class="img-fluid" src="Assets/images/photoGallary/photo-gallery-2.jpg" alt="Image 2"/>
-                        </a>
-                      </div>
-                    </div>
-                    <div class="col-lg-4">
-                      <div class="photo-gallery-items">
-                        <a href="Assets/images/photoGallary/photo-gallery-3.jpg"data-fancybox="gallery">
-                          <img class="img-fluid" src="Assets/images/photoGallary/photo-gallery-3.jpg" alt="Image 3"/>
-                        </a>
-                      </div>
-                    </div>
-                    <div class="col-lg-4">
-                      <div class="photo-gallery-items">
-                        <a href="Assets/images/photoGallary/photo-gallery-4.jpg"data-fancybox="gallery">
-                          <img class="img-fluid" src="Assets/images/photoGallary/photo-gallery-4.jpg" alt="Image 4"/>
-                        </a>
-                      </div>
-                    </div>
-                    <div class="col-lg-4">
-                      <div class="photo-gallery-items">
-                        <a href="Assets/images/photoGallary/photo-gallery-5.jpg"data-fancybox="gallery">
-                          <img class="img-fluid" src="Assets/images/photoGallary/photo-gallery-5.jpg" alt="Image 5"/>
-                        </a>
-                      </div>
-                    </div>
-                    <div class="col-lg-4">
-                      <div class="photo-gallery-items">
-                        <a href="Assets/images/photoGallary/photo-gallery-6.jpg"data-fancybox="gallery">
-                          <img class="img-fluid" src="Assets/images/photoGallary/photo-gallery-6.jpg" alt="Image 6"/>
-                        </a>
-                      </div>
+                <div class="row g-1">
+                  <div class="col-lg-3">
+                    <div class="photo-gallery-items">
+                      <a href="Assets/images/photoGallary/photo-gallery-9.jpg" data-fancybox="gallery">
+                        <img class="img-fluid" src="Assets/images/photoGallary/photo-gallery-9.jpg" alt="Image 9" />
+                      </a>
                     </div>
                   </div>
+                  <div class="col-lg-3">
+                    <div class="photo-gallery-items">
+                      <a href="Assets/images/photoGallary/photo-gallery-2.jpg" data-fancybox="gallery">
+                        <img class="img-fluid" src="Assets/images/photoGallary/photo-gallery-2.jpg" alt="Image 2" />
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-lg-3">
+                    <div class="photo-gallery-items">
+                      <a href="Assets/images/photoGallary/photo-gallery-3.jpg" data-fancybox="gallery">
+                        <img class="img-fluid" src="Assets/images/photoGallary/photo-gallery-3.jpg" alt="Image 3" />
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-lg-3">
+                    <div class="photo-gallery-items">
+                      <a href="Assets/images/photoGallary/photo-gallery-4.jpg" data-fancybox="gallery">
+                        <img class="img-fluid" src="Assets/images/photoGallary/photo-gallery-4.jpg" alt="Image 4" />
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-lg-3">
+                    <div class="photo-gallery-items">
+                      <a href="Assets/images/photoGallary/photo-gallery-5.jpg" data-fancybox="gallery">
+                        <img class="img-fluid" src="Assets/images/photoGallary/photo-gallery-5.jpg" alt="Image 5" />
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-lg-3">
+                    <div class="photo-gallery-items">
+                      <a href="Assets/images/photoGallary/photo-gallery-6.jpg" data-fancybox="gallery">
+                        <img class="img-fluid" src="Assets/images/photoGallary/photo-gallery-6.jpg" alt="Image 6" />
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-lg-3">
+                    <div class="photo-gallery-items">
+                      <a href="Assets/images/photoGallary/photo-gallery-7.jpg" data-fancybox="gallery">
+                        <img class="img-fluid" src="Assets/images/photoGallary/photo-gallery-7.jpg" alt="Image 7" />
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-lg-3">
+                    <div class="photo-gallery-items">
+                      <a href="Assets/images/photoGallary/photo-gallery-8.jpg" data-fancybox="gallery">
+                        <img class="img-fluid" src="Assets/images/photoGallary/photo-gallery-8.jpg" alt="Image 8" />
+                      </a>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
           <div class="col-lg-4 d-flex justify-content-end">
             <div class="footer-contact">
               <div class="footer-info">
-                <h3 class="footer-caption">Keep In Touch</h3>
+                <h5 class="footer-caption">Keep In Touch</h5>
                 <div class="footer-contact-items">
                   <span><i class="fa-solid fa-map-location"></i></span>
                   <p>24 North Kafrul, 3rd Floor, Dhaka-1206, Bangladesh.</p>
                 </div>
                 <div class="footer-contact-items">
-                  <span><i class="fa-solid fa-phone-volume"></i></i></span>
+                  <span><i class="fa-solid fa-phone-volume"></i></span>
                   <a href="tel:+8801714001209">+88 01714001209</a>
                 </div>
                 <div class="footer-contact-items">
-                  <span><i class="fa-solid fa-phone-volume"></i></span>
-                  <p>24 North Kafrul, 3rd Floor, Dhaka-1206, Bangladesh.</p>
+                  <span><i class="fa-solid fa-envelope"></i></span>
+                  <a href="mailto:eventmanagement.com">info@eventmanagement.com</a>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-     </footer>
+    </footer>
     <!-- footer section End  -->
 
     <!-- jquery js Start  -->
@@ -421,6 +631,9 @@
     <!-- Fancybox JS Start-->
     <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script>
     <!-- Fancybox JS End-->
+    <!-- Aos JS Link start  -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Aos JS Link End  -->
     <!-- js Link UP Start  -->
     <script src="Assets/js/script.js"></script>
     <!-- js Link UP End-->
