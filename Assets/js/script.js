@@ -1,38 +1,103 @@
 // Hero Area Slider JS Start
+// $(document).ready(function () {
+//   $(".hero-slider").slick({
+//     autoplay: true,
+//     autoplaySpeed: 4500,
+//     speed: 1000,
+//     dots: false,
+//     arrows: true,
+//     fade: true,
+//     cssEase: "ease-in-out",
+//     pauseOnHover: false,
+//     pauseOnFocus: false,
+//     adaptiveHeight: false,
+//   });
+// });
+
+// Fancybox Js Start
+// Fancybox.bind("[data-fancybox]", {
+//   animated: true,
+//   showClass: "fancybox-fadeIn",
+//   hideClass: "fancybox-fadeOut",
+// });
+// Fancybox JS End
+
+// section Animation  Js Start
+// AOS.init({
+//   once: true,
+//   offset: 100,
+//   duration: 1200,
+//   easing: "ease-in-out",
+// });
+// section Animation  Js End
+
+// swiper slider
+// var swiper = new Swiper(".mySwiper", {
+//   direction: "vertical",
+//   slidesPerView: 1,
+//   spaceBetween: 30,
+//   mousewheel: true,
+//   pagination: {
+//     el: ".swiper-pagination",
+//     clickable: true,
+//   },
+// });
+
+// ================= Hero Slider (Slick) =================
 $(document).ready(function () {
   $(".hero-slider").slick({
-    // autoplay: true,
-    // autoplaySpeed: 4500,
-    // speed: 1000,
-    dots: false,
+    autoplay: true,
+    autoplaySpeed: 4500,
+    speed: 1000,
+    dots: true,
     arrows: true,
     fade: true,
     cssEase: "ease-in-out",
     pauseOnHover: false,
     pauseOnFocus: false,
     adaptiveHeight: false,
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          arrows: false,
+          dots: true,
+        },
+      },
+    ],
   });
 });
 
-// Hero Area Slider JS End
+// ================= client Slider (Slick) =================
+$(document).ready(function () {
+  $(".event-client").slick({
+    slidesToShow: 6,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 1000,
+  });
+});
+
+// ================= Fancybox =================
 Fancybox.bind("[data-fancybox]", {
   animated: true,
   showClass: "fancybox-fadeIn",
   hideClass: "fancybox-fadeOut",
+  dragToClose: true,
+  Thumbs: false,
 });
-// Fancybox JS End
 
-// section Animation  Js Start
+// ================= AOS (Animation on Scroll) =================
 AOS.init({
-  once: true,
-  offset: 100,
-  duration: 1200,
+  once: false,
+  offset: 120,
+  duration: 600,
   easing: "ease-in-out",
 });
-// section Animation  Js End
 
-// swiper slider
-var swiper = new Swiper(".mySwiper", {
+// ================= upcoming event Slider (Swiper) =================
+
+var swiper1 = new Swiper(".mySwiper1", {
   direction: "vertical",
   slidesPerView: 1,
   spaceBetween: 30,
@@ -40,5 +105,19 @@ var swiper = new Swiper(".mySwiper", {
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
+  },
+  breakpoints: {
+    320: {
+      slidesPerView: 1,
+      spaceBetween: 20,
+    },
+    768: {
+      slidesPerView: 1,
+      spaceBetween: 25,
+    },
+    1024: {
+      slidesPerView: 1,
+      spaceBetween: 30,
+    },
   },
 });
