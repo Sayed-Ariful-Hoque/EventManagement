@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Event-Management</title>
+    <link rel="icon" type="image/x-icon" href="Assets/images/logo/logo.ico" />
+    <!-- fontawesome Start -->
+    <link rel="stylesheet" href="Assets/css/all.min.css" />
+    <link rel="stylesheet" href="Assets/css/fontawesome.min.css" />
+    <!-- fontawesome End -->
+    <!-- Bootstrap Start -->
+    <link rel="stylesheet" href="Assets/css/bootstrap.min.css" />
+    <!-- Bootstrap End -->
+    <!-- Main CSS Start  -->
+    <link rel="stylesheet" href="Assets/css/style.css" />
+    <!-- Main CSS End  -->
+  </head>
+  <body>
+    <!--Header section Start -->
+    <header class="headerArea">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-2 d-flex align-items-center">
+            <div class="headerLogo">
+              <a href="index.html">
+                <img src="Assets/images/nav-manu/logo.png" alt="logo.png" title="Event Horizon" />
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-8 d-flex align-items-center justify-content-center">
+            <nav>
+              <ul class="d-flex">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Events</a></li>
+                <li><a href="#">Pages</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="col-lg-2 d-flex align-items-center justify-content-end">
+            <div class="NavigationRight d-flex align-items-center">
+              <ul>
+                <li data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop">
+                  <i class="fa-solid fa-magnifying-glass"> </i>
+                </li>
+
+                <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
+                  <div class="offcanvas-header">
+                    <button type="button" class="close-bnt text-reset" data-bs-dismiss="offcanvas">
+                      <i class="fa-solid fa-circle-xmark"></i>
+                    </button>
+                  </div>
+                  <div class="offcanvas-body">
+                    <div class="search-container">
+                      <input type="text" class="search-input" placeholder="Search events..." autofocus="" />
+                      <button class="search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+                    </div>
+                  </div>
+                </div>
+              </ul>
+              <div class="sideBar">
+                <li data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                  <i class="fa-solid fa-bars"></i>
+                </li>
+
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                  <div class="offcanvas-header">
+                    <div class="headerLogo">
+                      <img src="Assets/images/nav-manu/logo.png" alt="logo.png" />
+                    </div>
+                    <button type="button" class="close-bnt" data-bs-dismiss="offcanvas" aria-label="Close">
+                      <i class="fa-solid fa-circle-xmark"></i>
+                    </button>
+                  </div>
+                  <div class="offcanvas-body">
+                    <h4>About Us</h4>
+                    <p>We craft exceptional events that leave lasting impressions. From corporate meetups to personal celebrations, our team ensures seamless planning, creativity, and flawless execution for every occasion.</p>
+                    <div class="contactInfo">
+                      <div class="contactItems d-flex">
+                        <span><i class="fa-solid fa-phone"></i></span>
+                        <div class="contactDetails">
+                          <h4>Reach Us Anytime</h4>
+                          <p><a href="tel:+88 01714001209">+88 01714001209</a></p>
+                        </div>
+                      </div>
+                      <div class="contactItems d-flex">
+                        <span><i class="fa-solid fa-envelope"></i></span>
+                        <div class="contactDetails">
+                          <h4>Send Your Ideas</h4>
+                          <p><a href="mailto:info@eventhorizon.com">info@eventhorizon.com</a></p>
+                        </div>
+                      </div>
+                      <div class="contactItems d-flex">
+                        <span><i class="fa-solid fa-location-dot"></i></span>
+                        <div class="contactDetails">
+                          <h4>Our Office</h4>
+                          <p>24 Northern Avenue, 3rd Floor, Dhaka-1206, Bangladesh</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="socialMedia">
+                      <ul class="d-flex justify-content-center align-items-center">
+                        <li>
+                          <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        </li>
+                        <li>
+                          <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        </li>
+                        <li>
+                          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        </li>
+                        <li>
+                          <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                        </li>
+                        <li>
+                          <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!--Header section End -->
+    <!-- common-banner-area start -->
+    <section class="common-banner-area">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="breadcrumbs">
+              <h1>Contact Us</h1>
+              <div class="bread-crumbs-list">
+                <li><a href="index.html">Home</a></li>
+                <span>/</span>
+                <li>Events</li>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- common-banner-area End  -->
+    <!-- contact Details Ara start  -->
+    <section class="contact-details-area">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="contact-us">
+              <h4>Contacting Us</h4>
+              <p>We value your questions, feedback, and ideas. Our team is always ready to assist you. Reach out anytime, and we’ll ensure you receive prompt, friendly, and helpful support.</p>
+              <div class="contact-information">
+                <h4>Contact Information</h4>
+                <div class="contact-list">
+                  <span><i class="fa-solid fa-location-arrow"></i></span>
+                  <p>24 Northern Avenue, 3rd Floor, Dhaka-1206, Bangladesh</p>
+                </div>
+                <div class="contact-list">
+                  <span><i class="fa-solid fa-mobile-screen"></i></span>
+                  <a href="tel:+8800123456789">+8800 123 456 789</a>
+                </div>
+                <div class="contact-list">
+                  <span><i class="fa-regular fa-envelope"></i></span>
+                  <a href="mailto:info@youremail.com">info@youremail.com</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-8">
+            <div class="message-form">
+              <h4>message form</h4>
+              <form action="#">
+                <div class="row">
+                  <div class="col-lg-6">
+                    <div class="input-list">
+                      <label class="form-label">Name</label>
+                      <input type="text" class="form-control" placeholder="Your Name" />
+                    </div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="input-list">
+                      <label class="form-label">Email</label>
+                      <input type="mail" class="form-control" placeholder="Your Email" />
+                    </div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="input-list">
+                      <label class="form-label">Phone</label>
+                      <input type="text" class="form-control" placeholder="Your Phone" />
+                    </div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="input-list">
+                      <label class="form-label">Subject</label>
+                      <input type="text" class="form-control" placeholder="How did you learn about us?" />
+                    </div>
+                  </div>
+                  <div class="col-lg-12">
+                    <div class="input-list">
+                      <label class="form-label">Message</label>
+                      <textarea class="form-control" placeholder="Your Message" rows="4"></textarea>
+                    </div>
+                  </div>
+                </div>
+                <div class="submit-btn">
+                  <a class="common-btn" href="#" tabindex="-1">SEND MESSAGE</a>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="contact-locatinon">
+          <div class="row">
+            <div class="col-lg-12">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7301.3564888501305!2d90.38508718696187!3d23.794469381472492!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c73cfb37631d%3A0x749601cd45f0c3fd!2z4KaV4Kaa4KeB4KaV4KeN4Ka34KeH4KakLCDgpqLgpr7gppXgpr4!5e0!3m2!1sbn!2sbd!4v1737793230372!5m2!1sbn!2sbd" width="100%" height="450" style="border: 0" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- contact Details Ara End  -->
+    <!-- footer section start  -->
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3">
+            <div class="footer-about">
+              <div class="footer-info">
+                <h5 class="footer-caption">About Event</h5>
+                <p>About Event highlights the purpose, key activities, and impact, bringing people together to celebrate, learn</p>
+              </div>
+              <div class="socialMedia">
+                <ul class="d-flex">
+                  <li>
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="footer-about">
+              <div class="footer-info">
+                <h5 class="footer-caption">Event Gallery</h5>
+              </div>
+              <div class="footer-gallery-event">
+                <div class="row g-1">
+                  <div class="col-lg-3">
+                    <div class="photo-gallery-items">
+                      <a href="Assets/images/home-page/photoGallary/photo-gallery-9.jpg" data-fancybox="gallery">
+                        <img class="img-fluid" src="Assets/images/home-page/photoGallary/photo-gallery-9.jpg" alt="Image 9" />
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-lg-3">
+                    <div class="photo-gallery-items">
+                      <a href="Assets/images/home-page/photoGallary/photo-gallery-2.jpg" data-fancybox="gallery">
+                        <img class="img-fluid" src="Assets/images/home-page/photoGallary/photo-gallery-2.jpg" alt="Image 2" />
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-lg-3">
+                    <div class="photo-gallery-items">
+                      <a href="Assets/images/home-page/photoGallary/photo-gallery-3.jpg" data-fancybox="gallery">
+                        <img class="img-fluid" src="Assets/images/home-page/photoGallary/photo-gallery-3.jpg" alt="Image 3" />
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-lg-3">
+                    <div class="photo-gallery-items">
+                      <a href="Assets/images/home-page/photoGallary/photo-gallery-4.jpg" data-fancybox="gallery">
+                        <img class="img-fluid" src="Assets/images/home-page/photoGallary/photo-gallery-4.jpg" alt="Image 4" />
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-lg-3">
+                    <div class="photo-gallery-items">
+                      <a href="Assets/images/home-page/photoGallary/photo-gallery-5.jpg" data-fancybox="gallery">
+                        <img class="img-fluid" src="Assets/images/home-page/photoGallary/photo-gallery-5.jpg" alt="Image 5" />
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-lg-3">
+                    <div class="photo-gallery-items">
+                      <a href="Assets/images/home-page/photoGallary/photo-gallery-6.jpg" data-fancybox="gallery">
+                        <img class="img-fluid" src="Assets/images/home-page/photoGallary/photo-gallery-6.jpg" alt="Image 6" />
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-lg-3">
+                    <div class="photo-gallery-items">
+                      <a href="Assets/images/home-page/photoGallary/photo-gallery-7.jpg" data-fancybox="gallery">
+                        <img class="img-fluid" src="Assets/images/home-page/photoGallary/photo-gallery-7.jpg" alt="Image 7" />
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-lg-3">
+                    <div class="photo-gallery-items">
+                      <a href="Assets/images/home-page/photoGallary/photo-gallery-8.jpg" data-fancybox="gallery">
+                        <img class="img-fluid" src="Assets/images/home-page/photoGallary/photo-gallery-8.jpg" alt="Image 8" />
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 d-flex justify-content-end">
+            <div class="footer-contact">
+              <div class="footer-info">
+                <h5 class="footer-caption">Keep In Touch</h5>
+                <div class="footer-contact-items">
+                  <span><i class="fa-solid fa-map-location"></i></span>
+                  <p>24 North Kafrul, 3rd Floor, Dhaka-1206, Bangladesh.</p>
+                </div>
+                <div class="footer-contact-items">
+                  <span><i class="fa-solid fa-phone-volume"></i></span>
+                  <a href="tel:+8801714001209">+88 01714001209</a>
+                </div>
+                <div class="footer-contact-items">
+                  <span><i class="fa-solid fa-envelope"></i></span>
+                  <a href="mailto:eventmanagement.com">info@eventmanagement.com</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- footer section End  -->
+
+    <!-- jquery js Start  -->
+    <script src="Assets/js/jquery-3.6.0.min.js"></script>
+    <!-- jquery js End-->
+
+    <!-- Bootstrap js Start  -->
+    <script src="Assets/js/bootstrap.min.js"></script>
+    <!-- Bootstrap js End-->
+
+    <!-- js Link UP Start  -->
+    <script src="Assets/js/script.js"></script>
+    <!-- js Link UP End-->
+  </body>
+</html>
