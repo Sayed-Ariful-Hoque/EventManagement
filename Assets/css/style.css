@@ -24,7 +24,9 @@ h2,
 h3 {
   margin: 0;
   padding: 0;
-  font-family: "Kaushan Script", cursive;
+  font-family: "Roboto", sans-serif;
+  font-style: italic;
+  /* font-family: "Kaushan Script", cursive; */
 }
 h4 {
   font-family: "Roboto", sans-serif;
@@ -135,10 +137,10 @@ a {
   z-index: 99;
 }
 .common-banner-area h1 {
-  font-size: 45px;
+  font-size: 40px;
   font-weight: 600;
   color: var(--white-color);
-  margin-bottom: 8px;
+  margin-bottom: 15px;
 }
 .common-banner-area li a {
   color: var(--secondary-color);
@@ -155,6 +157,22 @@ a {
 }
 .common-banner-area span {
   color: #ffffffc2;
+}
+.common-section-heading h2 {
+  color: var(--black-color);
+  font-size: 40px;
+  line-height: 1.1;
+  margin-bottom: 20px;
+}
+.common-section-heading p {
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: normal;
+  color: var(--text-color);
+}
+.common-section-heading span{
+  margin-left: 5px;
+  color: var(--secondary-color);
 }
 /* ======================= common css end */
 
@@ -422,11 +440,11 @@ a {
 }
 
 .slick-arrow {
-  margin-left: 60px;
+  margin-left: 0;
   background: #0f0f318c;
 }
 .slick-next {
-  right: 60px;
+  right: 0;
 }
 .slick-arrow :hover {
   color: var(--secondary-color);
@@ -1001,6 +1019,123 @@ a {
   left: -12px;
 }
 
+/* about page area start  */
+
+/* our-journey-area */
+.our-journey-area {
+  padding: 50px 0;
+}
+.our-journey-imges {
+  position: relative;
+}
+.our-journey-img-one img {
+  width: 100%;
+  aspect-ratio: 1.62;
+  object-fit: cover;
+  object-position: center;
+}
+.our-journey-img-tow {
+  width: 350px;
+  position: absolute;
+  top: 80%;
+  left: 80%;
+  transform: translateX(-50%) translateY(-50%);
+}
+.our-journey-img-tow img {
+  width: 100%;
+  aspect-ratio: 1.62;
+  object-fit: cover;
+  object-position: center;
+}
+.our-journey-img-three {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border-right: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+.our-journey-img-three img {
+  object-fit: cover;
+  object-position: center;
+  width: 170px;
+  height: 170px;
+  border-radius: 50%;
+  border: 1px solid #ffffff36;
+}
+
+/* event-memories-area */
+.event-memories-area {
+  padding: 50px 0;
+  background: #00000d13;
+}
+.event-memories-area .common-section-heading {
+  max-width: 800px;
+  margin: 0 auto;
+  padding-bottom: 40px;
+}
+.event-memories-area .common-section-heading h2 {
+  text-align: center;
+}
+.event-memories-area .common-section-heading p {
+  text-align: center;
+}
+.event-memories-items {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.event-memories-items-imgs img {
+  width: 100%;
+  aspect-ratio: 1.62;
+  object-fit: cover;
+  object-position: center;
+}
+.event-memories-items-info h4 {
+  font-size: 25px;
+  font-weight: 600;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+.event-memories-items-info {
+  padding: 20px;
+}
+.event-memories-items-info p {
+  font-size: 16px;
+  line-height: 1.7;
+  color: var(--text-color);
+}
+/* why-choose-eventh-area  */
+.why-choose-eventh-area {
+  padding: 50px 0;
+}
+.why-choose-eventh-area .common-section-heading{
+  margin-bottom: 40px;
+}
+.choose-eventh-imgs img{
+  width: 100%;
+  aspect-ratio: 0.9;
+  object-fit: cover;
+  object-position: center;
+}
+.why-choose-eventh-list{
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  padding: 15px;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+.choose-eventh-list-imgs {
+	text-align: center;
+	margin-bottom: 8px;
+}
+.choose-eventh-list-imgs img{
+  width: 64px;
+}
+.why-choose-eventh-list h4 {
+  color: var(--black-color);
+	font-size: 18px;
+	text-align: center;
+	font-weight: 600;
+	margin-bottom: 10px;
+}
+/* about page area end  */
 /* contact page start */
 .contact-details-area {
   padding: 50px 0;
@@ -1086,11 +1221,10 @@ a {
   box-shadow: none;
   border-color: var(--secondary-color);
 }
-.contact-locatinon{
+.contact-locatinon {
   margin-top: 50px;
 }
 /* contact page End */
-
 /* footer Area start  */
 footer {
   padding: 50px 0;
@@ -1142,6 +1276,6 @@ footer {
   transition: all ease 0.4s;
 }
 .footer-info a:hover {
-  color: var(--primary-color);
+  color: var(--secondary-color);
 }
 /* footer Area End  */
