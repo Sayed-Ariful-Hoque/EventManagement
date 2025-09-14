@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Event-Management</title>
+    <link rel="icon" type="image/x-icon" href="Assets/images/logo/logo.ico" />
+    <!-- fontawesome Start -->
+    <link rel="stylesheet" href="Assets/css/all.min.css" />
+    <link rel="stylesheet" href="Assets/css/fontawesome.min.css" />
+    <!-- fontawesome End -->
+    <!-- Bootstrap Start -->
+    <link rel="stylesheet" href="Assets/css/bootstrap.min.css" />
+    <!-- Bootstrap End -->
+    <!-- Fancybox CSS Start-->
+    <link rel="stylesheet" href="Assets/css/fancybox.css" />
+    <!-- Fancybox CSS End-->
+    <!-- Main CSS Start  -->
+    <link rel="stylesheet" href="Assets/css/style.css" />
+    <!-- Main CSS End  -->
+  </head>
+  <body>
+    <!--Header section Start -->
+    <header class="headerArea">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-2 d-flex align-items-center">
+            <div class="headerLogo">
+              <a href="index.html">
+                <img src="Assets/images/nav-manu/logo.png" alt="logo.png" title="Event Horizon" />
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-8 d-flex align-items-center justify-content-center">
+            <nav>
+              <ul class="d-flex">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="service.html">Services</a></li>
+                <li><a href="event.html">Events</a></li>
+                <li><a href="page.html">Pages</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="col-lg-2 d-flex align-items-center justify-content-end">
+            <div class="NavigationRight d-flex align-items-center">
+              <ul>
+                <li data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop">
+                  <i class="fa-solid fa-magnifying-glass"> </i>
+                </li>
+
+                <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
+                  <div class="offcanvas-header">
+                    <button type="button" class="close-bnt text-reset" data-bs-dismiss="offcanvas">
+                      <i class="fa-solid fa-circle-xmark"></i>
+                    </button>
+                  </div>
+                  <div class="offcanvas-body">
+                    <div class="search-container">
+                      <input type="text" class="search-input" placeholder="Search events..." autofocus="" />
+                      <button class="search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+                    </div>
+                  </div>
+                </div>
+              </ul>
+              <div class="sideBar">
+                <li data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                  <i class="fa-solid fa-bars"></i>
+                </li>
+
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                  <div class="offcanvas-header">
+                    <div class="headerLogo">
+                      <img src="Assets/images/nav-manu/logo.png" alt="logo.png" />
+                    </div>
+                    <button type="button" class="close-bnt" data-bs-dismiss="offcanvas" aria-label="Close">
+                      <i class="fa-solid fa-circle-xmark"></i>
+                    </button>
+                  </div>
+                  <div class="offcanvas-body">
+                    <h4>About Us</h4>
+                    <p>We craft exceptional events that leave lasting impressions. From corporate meetups to personal celebrations, our team ensures seamless planning, creativity, and flawless execution for every occasion.</p>
+                    <div class="contactInfo">
+                      <div class="contactItems d-flex">
+                        <span><i class="fa-solid fa-phone"></i></span>
+                        <div class="contactDetails">
+                          <h4>Reach Us Anytime</h4>
+                          <p><a href="tel:+88 01714001209">+88 01714001209</a></p>
+                        </div>
+                      </div>
+                      <div class="contactItems d-flex">
+                        <span><i class="fa-solid fa-envelope"></i></span>
+                        <div class="contactDetails">
+                          <h4>Send Your Ideas</h4>
+                          <p><a href="mailto:info@eventhorizon.com">info@eventhorizon.com</a></p>
+                        </div>
+                      </div>
+                      <div class="contactItems d-flex">
+                        <span><i class="fa-solid fa-location-dot"></i></span>
+                        <div class="contactDetails">
+                          <h4>Our Office</h4>
+                          <p>24 Northern Avenue, 3rd Floor, Dhaka-1206, Bangladesh</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="socialMedia">
+                      <ul class="d-flex justify-content-center align-items-center">
+                        <li>
+                          <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        </li>
+                        <li>
+                          <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        </li>
+                        <li>
+                          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        </li>
+                        <li>
+                          <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                        </li>
+                        <li>
+                          <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!--Header section End -->
+    <!-- common-banner-area start -->
+    <section class="common-banner-area">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="breadcrumbs">
+              <h1>Services</h1>
+              <div class="bread-crumbs-list">
+                <li><a href="index.html">Home</a></li>
+                <span>/</span>
+                <li>Services</li>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- common-banner-area End  -->
+    <!-- Complete Event Solutions area End  -->
+    <section class="complete-event-solutions-area">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="common-section-heading">
+              <h2>Complete Event Solutions</h2>
+              <p>From weddings to corporate events, we provide professional, creative, and hassle-free solutions to make every event memorable.</p>
+            </div>
+          </div>
+        </div>
+        <div class="complete-event-solutions">
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="event-solutions-items">
+                <div class="row">
+                  <div class="col-lg-3">
+                    <div class="event-solutions-items-imgs">
+                      <picture>
+                        <img class="img-fluid" src="Assets/images/servicesPage/event-solutions/Start-A-BusinessEvent.png" alt="Start-A-BusinessEvent.png" />
+                      </picture>
+                    </div>
+                  </div>
+                  <div class="col-lg-9">
+                    <div class="event-solutions-items-info">
+                      <h4>Start A Business Event</h4>
+                      <p>Kickstart your business journey with a professional event that showcases your brand, connects with clients, and creates lasting impressions, ensuring growth, networking opportunities, and memorable experiences for all attendees</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="event-solutions-items">
+                <div class="row">
+                  <div class="col-lg-3">
+                    <div class="event-solutions-items-imgs">
+                      <picture>
+                        <img class="img-fluid" src="Assets/images/servicesPage/event-solutions/ParticipateOnEvents.png" alt="ParticipateOnEvents.png" />
+                      </picture>
+                    </div>
+                  </div>
+                  <div class="col-lg-9">
+                    <div class="event-solutions-items-info">
+                      <h4>Participate On Events</h4>
+                      <p>Join our exciting events to network, learn, and engage with industry leaders. Participate in workshops, seminars, and exhibitions that enhance your skills and open doors to new opportunities</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="event-solutions-items">
+                <div class="row">
+                  <div class="col-lg-3">
+                    <div class="event-solutions-items-imgs">
+                      <picture>
+                        <img class="img-fluid" src="Assets/images/servicesPage/event-solutions/ManageEventWorldwide.png" alt="ManageEventWorldwide.png" />
+                      </picture>
+                    </div>
+                  </div>
+                  <div class="col-lg-9">
+                    <div class="event-solutions-items-info">
+                      <h4>Manage Event Worldwide</h4>
+                      <p>We manage events across the globe with expertise and precision. From planning to execution, our team ensures seamless experiences, exceptional coordination, and memorable moments for clients anywhere, anytime.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="event-solutions-items">
+                <div class="row">
+                  <div class="col-lg-3">
+                    <div class="event-solutions-items-imgs">
+                      <picture>
+                        <img class="img-fluid" src="Assets/images/servicesPage/event-solutions/Anniversaries.png" alt="Anniversaries.png" />
+                      </picture>
+                    </div>
+                  </div>
+                  <div class="col-lg-9">
+                    <div class="event-solutions-items-info">
+                      <h4>Seamless Event Management</h4>
+                      <p>From planning to flawless execution, we ensure every detail is perfectly managed. Our team delivers smooth, stress-free events so you can fully enjoy the experience</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="event-solutions-items">
+                <div class="row">
+                  <div class="col-lg-3">
+                    <div class="event-solutions-items-imgs">
+                      <picture>
+                        <img class="img-fluid" src="Assets/images/servicesPage/event-solutions/CorporateFunctions.png" alt="CorporateFunctions.png" />
+                      </picture>
+                    </div>
+                  </div>
+                  <div class="col-lg-9">
+                    <div class="event-solutions-items-info">
+                      <h4>Global Reach & Support</h4>
+                      <p>With an international network and expert partners, we deliver exceptional event management services worldwide, ensuring quality, consistency, and support wherever your event takes place.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="event-solutions-items">
+                <div class="row">
+                  <div class="col-lg-3">
+                    <div class="event-solutions-items-imgs">
+                      <picture>
+                        <img class="img-fluid" src="Assets/images/servicesPage/event-solutions/ConferencePlanning.png" alt="ConferencePlanning.png" />
+                      </picture>
+                    </div>
+                  </div>
+                  <div class="col-lg-9">
+                    <div class="event-solutions-items-info">
+                      <h4>Creative Designs</h4>
+                      <p>We craft unique and innovative designs tailored to your event theme, blending creativity with elegance to create unforgettable atmospheres that perfectly match your vision and style.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="event-solutions-items">
+                <div class="row">
+                  <div class="col-lg-3">
+                    <div class="event-solutions-items-imgs">
+                      <picture>
+                        <img class="img-fluid" src="Assets/images/servicesPage/event-solutions/BestLocations.png" alt="BestLocations.png" />
+                      </picture>
+                    </div>
+                  </div>
+                  <div class="col-lg-9">
+                    <div class="event-solutions-items-info">
+                      <h4>Best Locations</h4>
+                      <p>We organize events at the most exquisite and accessible locations, ensuring a perfect ambiance, convenience, and a memorable experience for all attendees, tailored to suit every theme and occasion.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="event-solutions-items">
+                <div class="row">
+                  <div class="col-lg-3">
+                    <div class="event-solutions-items-imgs">
+                      <picture>
+                        <img class="img-fluid" src="Assets/images/servicesPage/event-solutions/EasyOnlinePayments.png" alt="Start-A-BusinessEvent.png" />
+                      </picture>
+                    </div>
+                  </div>
+                  <div class="col-lg-9">
+                    <div class="event-solutions-items-info">
+                      <h4>Easy Online Payments</h4>
+                      <p>Enjoy hassle-free online payments for all your events. Secure, fast, and convenient transactions make booking, registration, and service payments smooth, giving you peace of mind and seamless event planning.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Complete Event Solutions area End  -->
+    <!-- Individual Services area End  -->
+    <section class="individual-services-area">
+      <div class="container">
+        <div class="common-section-heading">
+          <h2>Individual Services</h2>
+        </div>
+        <div class="row g-0">
+          <div class="col-lg-6">
+            <div class="individual-services-items">
+              <a href="#">
+                <div class="row g-0">
+                  <div class="col-lg-6">
+                    <div class="individual-services-imgs">
+                      <picture>
+                        <img class="img-fluid" src="Assets/images/servicesPage/individual-services/IndividualServices-1.webp" alt="IndividualServices-1.webp" />
+                      </picture>
+                    </div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="individual-services-info">
+                      <h4>Wedding Planning</h4>
+                      <p>Make your wedding unforgettable with our expert planning. From elegant décor to flawless coordination create lasting memories for you and your guests.</p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="individual-services-items">
+              <a href="#">
+                <div class="row g-0">
+                  <div class="col-lg-6">
+                    <div class="individual-services-imgs">
+                      <picture>
+                        <img class="img-fluid" src="Assets/images/servicesPage/individual-services/IndividualServices-2.jpg" alt="IndividualServices-2.jpg" />
+                      </picture>
+                    </div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="individual-services-info">
+                      <h4>Corporate Events</h4>
+                      <p>Make your wedding unforgettable with our expert planning. From elegant décor to flawless coordination create lasting memories for you and your guests.</p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="individual-services-items">
+              <a href="#">
+                <div class="row g-0">
+                  <div class="col-lg-6">
+                    <div class="individual-services-info">
+                      <h4>Birthday Parties</h4>
+                      <p>Make your wedding unforgettable with our expert planning. From elegant décor to flawless coordination create lasting memories for you and your guests.</p>
+                    </div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="individual-services-imgs">
+                      <picture>
+                        <img class="img-fluid" src="Assets/images/servicesPage/individual-services/IndividualServices-3.webp" alt="IndividualServices-3.webp" />
+                      </picture>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="individual-services-items">
+              <div class="row g-0">
+                <div class="col-lg-6">
+                  <div class="individual-services-info">
+                    <h4>Anniversaries</h4>
+                    <p>Make your wedding unforgettable with our expert planning. From elegant décor to flawless coordination create lasting memories for you and your guests.</p>
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="individual-services-imgs">
+                    <picture>
+                      <img class="img-fluid" src="Assets/images/servicesPage/individual-services/IndividualServices-4.jpg" alt="IndividualServices-4.jpg" />
+                    </picture>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="individual-services-items">
+              <a href="#">
+                <div class="row g-0">
+                  <div class="col-lg-6">
+                    <div class="individual-services-imgs">
+                      <picture>
+                        <img class="img-fluid" src="Assets/images/servicesPage/individual-services/IndividualServices-5.jpg" alt="IndividualServices-5.jpg" />
+                      </picture>
+                    </div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="individual-services-info">
+                      <h4>Conference Planning</h4>
+                      <p>Make your wedding unforgettable with our expert planning. From elegant décor to flawless coordination create lasting memories for you and your guests.</p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="individual-services-items">
+              <a href="#">
+                <div class="row g-0">
+                  <div class="col-lg-6">
+                    <div class="individual-services-imgs">
+                      <picture>
+                        <img class="img-fluid" src="Assets/images/servicesPage/individual-services/IndividualServices-6.jpg" alt="IndividualServices-6.jpg" />
+                      </picture>
+                    </div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="individual-services-info">
+                      <h4>Concerts & Entertainment Shows</h4>
+                      <p>Make your wedding unforgettable with our expert planning. From elegant décor to flawless coordination create lasting memories for you and your guests.</p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Individual Services area End  -->
+    <!-- footer section start  -->
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3">
+            <div class="footer-about">
+              <div class="footer-info">
+                <h5 class="footer-caption">About Event</h5>
+                <p>About Event highlights the purpose, key activities, and impact, bringing people together to celebrate, learn</p>
+              </div>
+              <div class="socialMedia">
+                <ul class="d-flex">
+                  <li>
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="footer-about">
+              <div class="footer-info">
+                <h5 class="footer-caption">Event Gallery</h5>
+              </div>
+              <div class="footer-gallery-event">
+                <div class="row g-1">
+                  <div class="col-lg-3">
+                    <div class="photo-gallery-items">
+                      <a href="Assets/images/home-page/photoGallary/photo-gallery-9.jpg" data-fancybox="gallery">
+                        <img class="img-fluid" src="Assets/images/home-page/photoGallary/photo-gallery-9.jpg" alt="Image 9" />
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-lg-3">
+                    <div class="photo-gallery-items">
+                      <a href="Assets/images/home-page/photoGallary/photo-gallery-2.jpg" data-fancybox="gallery">
+                        <img class="img-fluid" src="Assets/images/home-page/photoGallary/photo-gallery-2.jpg" alt="Image 2" />
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-lg-3">
+                    <div class="photo-gallery-items">
+                      <a href="Assets/images/home-page/photoGallary/photo-gallery-3.jpg" data-fancybox="gallery">
+                        <img class="img-fluid" src="Assets/images/home-page/photoGallary/photo-gallery-3.jpg" alt="Image 3" />
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-lg-3">
+                    <div class="photo-gallery-items">
+                      <a href="Assets/images/home-page/photoGallary/photo-gallery-4.jpg" data-fancybox="gallery">
+                        <img class="img-fluid" src="Assets/images/home-page/photoGallary/photo-gallery-4.jpg" alt="Image 4" />
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-lg-3">
+                    <div class="photo-gallery-items">
+                      <a href="Assets/images/home-page/photoGallary/photo-gallery-5.jpg" data-fancybox="gallery">
+                        <img class="img-fluid" src="Assets/images/home-page/photoGallary/photo-gallery-5.jpg" alt="Image 5" />
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-lg-3">
+                    <div class="photo-gallery-items">
+                      <a href="Assets/images/home-page/photoGallary/photo-gallery-6.jpg" data-fancybox="gallery">
+                        <img class="img-fluid" src="Assets/images/home-page/photoGallary/photo-gallery-6.jpg" alt="Image 6" />
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-lg-3">
+                    <div class="photo-gallery-items">
+                      <a href="Assets/images/home-page/photoGallary/photo-gallery-7.jpg" data-fancybox="gallery">
+                        <img class="img-fluid" src="Assets/images/home-page/photoGallary/photo-gallery-7.jpg" alt="Image 7" />
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-lg-3">
+                    <div class="photo-gallery-items">
+                      <a href="Assets/images/home-page/photoGallary/photo-gallery-8.jpg" data-fancybox="gallery">
+                        <img class="img-fluid" src="Assets/images/home-page/photoGallary/photo-gallery-8.jpg" alt="Image 8" />
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 d-flex justify-content-end">
+            <div class="footer-contact">
+              <div class="footer-info">
+                <h5 class="footer-caption">Keep In Touch</h5>
+                <div class="footer-contact-items">
+                  <span><i class="fa-solid fa-map-location"></i></span>
+                  <p>24 North Kafrul, 3rd Floor, Dhaka-1206, Bangladesh.</p>
+                </div>
+                <div class="footer-contact-items">
+                  <span><i class="fa-solid fa-phone-volume"></i></span>
+                  <a href="tel:+8801714001209">+88 01714001209</a>
+                </div>
+                <div class="footer-contact-items">
+                  <span><i class="fa-solid fa-envelope"></i></span>
+                  <a href="mailto:eventmanagement.com">info@eventmanagement.com</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- footer section End  -->
+
+    <!-- jquery js Start  -->
+    <script src="Assets/js/jquery-3.6.0.min.js"></script>
+    <!-- jquery js End-->
+
+    <!-- Bootstrap js Start  -->
+    <script src="Assets/js/bootstrap.min.js"></script>
+    <!-- Bootstrap js End-->
+
+    <!-- Fancybox JS Start-->
+    <script src="Assets/js/fancybox.umd.js"></script>
+    <!-- Fancybox JS End-->
+
+    <!-- js Link UP Start  -->
+    <script src="Assets/js/script.js"></script>
+    <!-- js Link UP End-->
+  </body>
+</html>
