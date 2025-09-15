@@ -210,7 +210,7 @@ a {
 
 /* header Area start  */
 .headerArea {
-  padding: 8px 0;
+  /* padding: 8px 0; */
   background: linear-gradient(3900deg, #224a2b, #02123b, #164524);
   position: sticky;
   top: 0;
@@ -227,12 +227,67 @@ a {
   color: var(--white-color);
   font-size: 16px;
   font-weight: 600;
+  display: inline-block;
+  padding: 10px 0;
   transition: all ease 0.4s;
   text-transform: capitalize;
 }
 .headerArea nav ul li:hover a {
   color: var(--secondary-color);
 }
+/* .dropdown-menu {
+  display: none;
+  transition: all ease 0.4s;
+  top: 100%;
+  padding: 8px;
+}
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+.dropdown:hover .dropdown-menu li a {
+  display:block;
+  color: var(--black-color);
+} */
+
+/* reset */
+.main-menu,
+.main-menu ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.main-menu li {
+  position: relative;
+}
+.main-menu > li {
+  display: inline-block;
+}
+.main-menu > li > a {
+  padding: 10px 20px;
+  display: block;
+  color: #fff;
+  text-decoration: none;
+}
+.main-menu .dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: #fff;
+  display: none;
+  z-index: 999;
+  padding: 10px 0;
+}
+.main-menu .dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.main-menu ul .dropdown-menu li a {
+  padding: 8px;
+  display: block;
+  color: #000;
+  text-decoration: none;
+}
+
 .NavigationRight {
   gap: 0 30px;
 }
@@ -247,7 +302,6 @@ a {
   color: var(--secondary-color);
   cursor: pointer;
 }
-
 /* .search-btn  */
 
 .search-container {
@@ -471,12 +525,12 @@ a {
   color: white;
 }
 
-.slick-arrow {
-  margin-left: 0;
+.hero-area .slick-arrow {
+  margin-left: 40px;
   background: #0f0f318c;
 }
-.slick-next {
-  right: 0;
+.hero-area .slick-next {
+  right: 20px;
 }
 .slick-arrow :hover {
   color: var(--secondary-color);
