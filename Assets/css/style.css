@@ -147,7 +147,7 @@ a {
   z-index: 99;
 }
 .common-banner-area h1 {
-  font-size: 40px;
+  font-size: 35px;
   font-weight: 600;
   color: var(--white-color);
   margin-bottom: 15px;
@@ -183,6 +183,28 @@ a {
 .common-section-heading span {
   margin-left: 5px;
   color: var(--secondary-color);
+}
+.pagination-bar {
+  margin-top: 50px;
+  text-align: center;
+}
+.pagination-bar .pagination {
+  justify-content: center;
+}
+.pagination-bar .page-link {
+  padding: 10px 20px;
+  color: #00000d;
+  font-weight: 600;
+}
+.pagination-bar .page-link:hover {
+  color: var(--primary-color);
+}
+.pagination-bar .page-link:focus {
+  z-index: 3;
+  color: var(--black-color);
+  background-color: var(--bs-pagination-focus-bg);
+  outline: 0;
+  box-shadow: none;
 }
 /* ======================= common css end */
 
@@ -813,7 +835,7 @@ a {
 .event-organizer-member-list {
   position: relative;
   background: var(--white-color);
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  /* box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; */
   border-radius: 12px;
   cursor: pointer;
   transition: transform 0.3s, box-shadow 0.3s;
@@ -933,9 +955,14 @@ a {
 .latest-blog-area {
   padding: 50px 0;
 }
+
 .latest-blog-items {
   border: 1px solid var(--border-color);
   border-radius: 10px;
+  margin-bottom: 20px;
+}
+.latest-blog .col-lg-4:nth-last-child(-n + 3) .latest-blog-items {
+  margin-bottom: 0;
 }
 .latest-blog-imgs {
   overflow: hidden;
@@ -1073,7 +1100,7 @@ a {
 }
 
 /* event-memories-area */
-.event-memories-area {
+/* .event-memories-area {
   position: relative;
   overflow: hidden;
   padding: 50px 0;
@@ -1093,11 +1120,12 @@ a {
   height: 100%;
   background: rgba(0, 0, 0, 0.7);
   z-index: -1;
-}
-/* .event-memories-area {
-  padding: 50px 0;
-  background: #00000d5b;
 } */
+.event-memories-area {
+  padding: 50px 0;
+  /* background: #00000d5b; */
+  background: var(--black-color);
+}
 .event-memories-area .common-section-heading {
   max-width: 800px;
   margin: 0 auto;
@@ -1111,19 +1139,23 @@ a {
   color: var(--white-color);
   text-align: center;
 }
-.event-memories-items {
+/* .event-memories{
+  background: #fff;
+} */
+/* .event-memories-items {
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-}
+} */
 .event-memories-items-imgs img {
   width: 100%;
   aspect-ratio: 1.62;
   object-fit: cover;
   object-position: center;
 }
-.event-memories-items-info{
+/* .event-memories-items-info{
   background: var(--white-color);
-}
+} */
 .event-memories-items-info h4 {
+  color: #ffffffe3;
   font-size: 22px;
   font-weight: 600;
   line-height: 1.2;
@@ -1221,7 +1253,7 @@ a {
   position: relative;
   overflow: hidden;
   padding: 50px 0;
-  background:url(../images/servicesPage/individual-services/IndividualServices-100.jpg);
+  background: url(../images/servicesPage/individual-services/IndividualServices-100.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1274,6 +1306,56 @@ a {
   color: var(--text-color);
 }
 /* services page area end  */
+/* event page area start  */
+.the-event-area {
+  background: #000;
+  padding: 50px 0;
+}
+.event-list-item {
+  background: #00000d;
+  border-bottom: 1px solid var(--border-color);
+  transition: all ease 0.4s;
+  /* margin-bottom: 20px; */
+}
+.event-list-item-info h3 {
+  color: var(--white-color);
+  font-size: 20px;
+  line-height: 1.3;
+  font-weight: 600;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-bottom: 15px;
+}
+.event-list-item:hover .event-list-item-info h3 {
+  color: var(--secondary-color);
+}
+.the-event-area .event-list-item-info p {
+  color: var(--text-color);
+  font-size: 16px;
+  font-weight: 600;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-bottom: 20px;
+}
+.the-event-area .details-info {
+  display: flex;
+}
+.the-event-area .details-info strong {
+  margin-right: 10px;
+  color: #ffffffe1;
+}
+.the-event-area .details-info p {
+  color: var(--text-color);
+  font-size: 16px;
+}
+
+/* event page area end  */
 
 /* contact page area start */
 .contact-details-area {
