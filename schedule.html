@@ -1,0 +1,858 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Event-Management</title>
+    <link rel="icon" type="image/x-icon" href="Assets/images/logo/logo.ico" />
+    <!-- fontawesome Start -->
+    <link rel="stylesheet" href="Assets/css/all.min.css" />
+    <link rel="stylesheet" href="Assets/css/fontawesome.min.css" />
+    <!-- fontawesome End -->
+    <!-- Bootstrap Start -->
+    <link rel="stylesheet" href="Assets/css/bootstrap.min.css" />
+    <!-- Bootstrap End -->
+    <!-- Fancybox CSS Start-->
+    <link rel="stylesheet" href="Assets/css/fancybox.css" />
+    <!-- Fancybox CSS End-->
+    <!-- Main CSS Start  -->
+    <link rel="stylesheet" href="Assets/css/style.css" />
+    <!-- Main CSS End  -->
+  </head>
+  <body>
+    <!--Header section Start -->
+    <header class="headerArea">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-2 d-flex align-items-center">
+            <div class="headerLogo">
+              <a href="index.html">
+                <img src="Assets/images/nav-manu/logo.png" alt="logo.png" title="Event Horizon" />
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-8 d-flex align-items-center justify-content-center">
+            <div class="main-menu">
+              <nav>
+                <ul class="nav-menu">
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="about.html">About Us</a></li>
+                  <li><a href="service.html">Services</a></li>
+                  <li class="menu-dropdown">
+                    <a href="#">
+                      Events <span><i class="fa-solid fa-caret-down"></i></span>
+                    </a>
+                    <ul class="submenu">
+                      <li><a href="event.html">All Event</a></li>
+                      <li><a href="schedule.html">Event Schedule</a></li>
+                    </ul>
+                  </li>
+                  <li class="menu-dropdown">
+                    <a href="#">
+                      Pages <span><i class="fa-solid fa-caret-down"></i></span>
+                    </a>
+                    <ul class="submenu">
+                      <li><a href="privacyPolicy.html">Privacy Policy</a></li>
+                      <li><a href="termsConditions.html">Terms & Conditions</a></li>
+                      <li><a href="photoGallery.html">Photo Gallery</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="blog.html">Blog</a></li>
+                  <li><a href="contact.html">Contact</a></li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+          <div class="col-lg-2 d-flex align-items-center justify-content-end">
+            <div class="NavigationRight d-flex align-items-center">
+              <ul>
+                <li data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop">
+                  <i class="fa-solid fa-magnifying-glass"> </i>
+                </li>
+
+                <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
+                  <div class="offcanvas-header">
+                    <button type="button" class="close-bnt text-reset" data-bs-dismiss="offcanvas">
+                      <i class="fa-solid fa-circle-xmark"></i>
+                    </button>
+                  </div>
+                  <div class="offcanvas-body">
+                    <div class="search-container">
+                      <input type="text" class="search-input" placeholder="Search events..." autofocus="" />
+                      <button class="search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+                    </div>
+                  </div>
+                </div>
+              </ul>
+              <div class="sideBar">
+                <li data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                  <i class="fa-solid fa-bars"></i>
+                </li>
+
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                  <div class="offcanvas-header">
+                    <div class="headerLogo">
+                      <img src="Assets/images/nav-manu/logo.png" alt="logo.png" />
+                    </div>
+                    <button type="button" class="close-bnt" data-bs-dismiss="offcanvas" aria-label="Close">
+                      <i class="fa-solid fa-circle-xmark"></i>
+                    </button>
+                  </div>
+                  <div class="offcanvas-body">
+                    <h4>About Us</h4>
+                    <p>We craft exceptional events that leave lasting impressions. From corporate meetups to personal celebrations, our team ensures seamless planning, creativity, and flawless execution for every occasion.</p>
+                    <div class="contactInfo">
+                      <div class="contactItems d-flex">
+                        <span><i class="fa-solid fa-phone"></i></span>
+                        <div class="contactDetails">
+                          <h4>Reach Us Anytime</h4>
+                          <p><a href="tel:+88 01714001209">+88 01714001209</a></p>
+                        </div>
+                      </div>
+                      <div class="contactItems d-flex">
+                        <span><i class="fa-solid fa-envelope"></i></span>
+                        <div class="contactDetails">
+                          <h4>Send Your Ideas</h4>
+                          <p><a href="mailto:info@eventhorizon.com">info@eventhorizon.com</a></p>
+                        </div>
+                      </div>
+                      <div class="contactItems d-flex">
+                        <span><i class="fa-solid fa-location-dot"></i></span>
+                        <div class="contactDetails">
+                          <h4>Our Office</h4>
+                          <p>24 Northern Avenue, 3rd Floor, Dhaka-1206, Bangladesh</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="socialMedia">
+                      <ul class="d-flex justify-content-center align-items-center">
+                        <li>
+                          <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        </li>
+                        <li>
+                          <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        </li>
+                        <li>
+                          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        </li>
+                        <li>
+                          <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                        </li>
+                        <li>
+                          <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!--Header section End -->
+    <!-- common-banner-area start -->
+    <section class="common-banner-area">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="breadcrumbs">
+              <h1>Schedule</h1>
+              <div class="bread-crumbs-list">
+                <li><a href="index.html">Home</a></li>
+                <span>/</span>
+                <li>Schedule</li>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- common-banner-area End  -->
+    <!-- schedule area start  -->
+    <section class="event-schedule-area">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3">
+            <div class="schedule-sidebar">
+              <div class="nav" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                <button class="nav-link active" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home" aria-selected="true">Conference</button>
+                <button class="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false">Corporate Events</button>
+                <button class="nav-link" id="v-pills-messages-tab" data-bs-toggle="pill" data-bs-target="#v-pills-messages" type="button" role="tab" aria-controls="v-pills-messages" aria-selected="false">Wedding Event</button>
+                <button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-settings" type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false">Special Occasions</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-9">
+            <div class="event-schedule-content">
+              <div class="tab-content" id="v-pills-tabContent">
+                <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
+                  <div class="event-schedule-List">
+                    <a href="eventDetails.html">
+                      <div class="row">
+                        <div class="col-lg-3 d-flex align-items-center">
+                          <div class="event-schedule-times">
+                            <li>
+                              <span><i class="fa-solid fa-clock"></i></span>
+                              <p>10:00AM</p>
+                            </li>
+                            <li>
+                              <span><i class="fa-solid fa-calendar-days"></i></span>
+                              <p>20 September</p>
+                            </li>
+                          </div>
+                        </div>
+                        <div class="col-lg-6">
+                          <div class="event-schedule-dec">
+                            <h3>Occasion Organizer</h3>
+                            <p>Plan, manage, and enjoy weddings, birthdays, corporate events, and celebrations seamlessly with Occasion Organizer's easy, organized event schedules.</p>
+                          </div>
+                        </div>
+                        <div class="col-lg-3 d-flex align-items-center">
+                          <div class="event-schedule-bnt">
+                            <div class="btn-wrapper text-center">
+                              <button class="common-btn">View Details</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="event-schedule-List">
+                    <a href="eventDetails.html">
+                      <div class="row">
+                        <div class="col-lg-3 d-flex align-items-center">
+                          <div class="event-schedule-times">
+                            <li>
+                              <span><i class="fa-solid fa-clock"></i></span>
+                              <p>10:00AM</p>
+                            </li>
+                            <li>
+                              <span><i class="fa-solid fa-calendar-days"></i></span>
+                              <p>26 September</p>
+                            </li>
+                          </div>
+                        </div>
+                        <div class="col-lg-6">
+                          <div class="event-schedule-dec">
+                            <h3>Cybersecurity Protecting Data & Privacy</h3>
+                            <p>Join us for an unforgettable event featuring inspiring speakers, engaging sessions, and meaningful networking opportunities.</p>
+                          </div>
+                        </div>
+                        <div class="col-lg-3 d-flex align-items-center">
+                          <div class="event-schedule-bnt">
+                            <div class="btn-wrapper text-center">
+                              <button class="common-btn">View Details</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="event-schedule-List">
+                    <a href="eventDetails.html">
+                      <div class="row">
+                        <div class="col-lg-3 d-flex align-items-center">
+                          <div class="event-schedule-times">
+                            <li>
+                              <span><i class="fa-solid fa-clock"></i></span>
+                              <p>10:00AM</p>
+                            </li>
+                            <li>
+                              <span><i class="fa-solid fa-calendar-days"></i></span>
+                              <p>26 September</p>
+                            </li>
+                          </div>
+                        </div>
+                        <div class="col-lg-6">
+                          <div class="event-schedule-dec">
+                            <h3>Cybersecurity Protecting Data & Privacy</h3>
+                            <p>Join us for an unforgettable event featuring inspiring speakers, engaging sessions, and meaningful networking opportunities. Join us for an unforgettable event featuring inspiring speakers, engaging sessions, and meaningful networking opportunities.</p>
+                          </div>
+                        </div>
+                        <div class="col-lg-3 d-flex align-items-center">
+                          <div class="event-schedule-bnt">
+                            <div class="btn-wrapper text-center">
+                              <button class="common-btn">View Details</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="event-schedule-List">
+                    <a href="eventDetails.html">
+                      <div class="row">
+                        <div class="col-lg-3 d-flex align-items-center">
+                          <div class="event-schedule-times">
+                            <li>
+                              <span><i class="fa-solid fa-clock"></i></span>
+                              <p>10:00AM</p>
+                            </li>
+                            <li>
+                              <span><i class="fa-solid fa-calendar-days"></i></span>
+                              <p>26 September</p>
+                            </li>
+                          </div>
+                        </div>
+                        <div class="col-lg-6">
+                          <div class="event-schedule-dec">
+                            <h3>Cybersecurity Protecting Data & Privacy</h3>
+                            <p>Join us for an unforgettable event featuring inspiring speakers, engaging sessions, and meaningful networking opportunities.</p>
+                          </div>
+                        </div>
+                        <div class="col-lg-3 d-flex align-items-center">
+                          <div class="event-schedule-bnt">
+                            <div class="btn-wrapper text-center">
+                              <button class="common-btn">View Details</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
+                  <div class="event-schedule-List">
+                    <a href="eventDetails.html">
+                      <div class="row">
+                        <div class="col-lg-3 d-flex align-items-center">
+                          <div class="event-schedule-times">
+                            <li>
+                              <span><i class="fa-solid fa-clock"></i></span>
+                              <p>10:00AM</p>
+                            </li>
+                            <li>
+                              <span><i class="fa-solid fa-calendar-days"></i></span>
+                              <p>20 September</p>
+                            </li>
+                          </div>
+                        </div>
+                        <div class="col-lg-6">
+                          <div class="event-schedule-dec">
+                            <h3>Occasion Organizer</h3>
+                            <p>Plan, manage, and enjoy weddings, birthdays, corporate events, and celebrations seamlessly with Occasion Organizer's easy, organized event schedules.</p>
+                          </div>
+                        </div>
+                        <div class="col-lg-3 d-flex align-items-center">
+                          <div class="event-schedule-bnt">
+                            <div class="btn-wrapper text-center">
+                              <button class="common-btn">View Details</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="event-schedule-List">
+                    <a href="eventDetails.html">
+                      <div class="row">
+                        <div class="col-lg-3 d-flex align-items-center">
+                          <div class="event-schedule-times">
+                            <li>
+                              <span><i class="fa-solid fa-clock"></i></span>
+                              <p>10:00AM</p>
+                            </li>
+                            <li>
+                              <span><i class="fa-solid fa-calendar-days"></i></span>
+                              <p>26 September</p>
+                            </li>
+                          </div>
+                        </div>
+                        <div class="col-lg-6">
+                          <div class="event-schedule-dec">
+                            <h3>Cybersecurity Protecting Data & Privacy</h3>
+                            <p>Join us for an unforgettable event featuring inspiring speakers, engaging sessions, and meaningful networking opportunities.</p>
+                          </div>
+                        </div>
+                        <div class="col-lg-3 d-flex align-items-center">
+                          <div class="event-schedule-bnt">
+                            <div class="btn-wrapper text-center">
+                              <button class="common-btn">View Details</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="event-schedule-List">
+                    <a href="eventDetails.html">
+                      <div class="row">
+                        <div class="col-lg-3 d-flex align-items-center">
+                          <div class="event-schedule-times">
+                            <li>
+                              <span><i class="fa-solid fa-clock"></i></span>
+                              <p>10:00AM</p>
+                            </li>
+                            <li>
+                              <span><i class="fa-solid fa-calendar-days"></i></span>
+                              <p>26 September</p>
+                            </li>
+                          </div>
+                        </div>
+                        <div class="col-lg-6">
+                          <div class="event-schedule-dec">
+                            <h3>Cybersecurity Protecting Data & Privacy</h3>
+                            <p>Join us for an unforgettable event featuring inspiring speakers, engaging sessions, and meaningful networking opportunities. Join us for an unforgettable event featuring inspiring speakers, engaging sessions, and meaningful networking opportunities.</p>
+                          </div>
+                        </div>
+                        <div class="col-lg-3 d-flex align-items-center">
+                          <div class="event-schedule-bnt">
+                            <div class="btn-wrapper text-center">
+                              <button class="common-btn">View Details</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="event-schedule-List">
+                    <a href="eventDetails.html">
+                      <div class="row">
+                        <div class="col-lg-3 d-flex align-items-center">
+                          <div class="event-schedule-times">
+                            <li>
+                              <span><i class="fa-solid fa-clock"></i></span>
+                              <p>10:00AM</p>
+                            </li>
+                            <li>
+                              <span><i class="fa-solid fa-calendar-days"></i></span>
+                              <p>26 September</p>
+                            </li>
+                          </div>
+                        </div>
+                        <div class="col-lg-6">
+                          <div class="event-schedule-dec">
+                            <h3>Cybersecurity Protecting Data & Privacy</h3>
+                            <p>Join us for an unforgettable event featuring inspiring speakers, engaging sessions, and meaningful networking opportunities.</p>
+                          </div>
+                        </div>
+                        <div class="col-lg-3 d-flex align-items-center">
+                          <div class="event-schedule-bnt">
+                            <div class="btn-wrapper text-center">
+                              <button class="common-btn">View Details</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">
+                  <div class="event-schedule-List">
+                    <a href="eventDetails.html">
+                      <div class="row">
+                        <div class="col-lg-3 d-flex align-items-center">
+                          <div class="event-schedule-times">
+                            <li>
+                              <span><i class="fa-solid fa-clock"></i></span>
+                              <p>10:00AM</p>
+                            </li>
+                            <li>
+                              <span><i class="fa-solid fa-calendar-days"></i></span>
+                              <p>20 September</p>
+                            </li>
+                          </div>
+                        </div>
+                        <div class="col-lg-6">
+                          <div class="event-schedule-dec">
+                            <h3>Occasion Organizer</h3>
+                            <p>Plan, manage, and enjoy weddings, birthdays, corporate events, and celebrations seamlessly with Occasion Organizer's easy, organized event schedules.</p>
+                          </div>
+                        </div>
+                        <div class="col-lg-3 d-flex align-items-center">
+                          <div class="event-schedule-bnt">
+                            <div class="btn-wrapper text-center">
+                              <button class="common-btn">View Details</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="event-schedule-List">
+                    <a href="eventDetails.html">
+                      <div class="row">
+                        <div class="col-lg-3 d-flex align-items-center">
+                          <div class="event-schedule-times">
+                            <li>
+                              <span><i class="fa-solid fa-clock"></i></span>
+                              <p>10:00AM</p>
+                            </li>
+                            <li>
+                              <span><i class="fa-solid fa-calendar-days"></i></span>
+                              <p>26 September</p>
+                            </li>
+                          </div>
+                        </div>
+                        <div class="col-lg-6">
+                          <div class="event-schedule-dec">
+                            <h3>Cybersecurity Protecting Data & Privacy</h3>
+                            <p>Join us for an unforgettable event featuring inspiring speakers, engaging sessions, and meaningful networking opportunities.</p>
+                          </div>
+                        </div>
+                        <div class="col-lg-3 d-flex align-items-center">
+                          <div class="event-schedule-bnt">
+                            <div class="btn-wrapper text-center">
+                              <button class="common-btn">View Details</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="event-schedule-List">
+                    <a href="eventDetails.html">
+                      <div class="row">
+                        <div class="col-lg-3 d-flex align-items-center">
+                          <div class="event-schedule-times">
+                            <li>
+                              <span><i class="fa-solid fa-clock"></i></span>
+                              <p>10:00AM</p>
+                            </li>
+                            <li>
+                              <span><i class="fa-solid fa-calendar-days"></i></span>
+                              <p>26 September</p>
+                            </li>
+                          </div>
+                        </div>
+                        <div class="col-lg-6">
+                          <div class="event-schedule-dec">
+                            <h3>Cybersecurity Protecting Data & Privacy</h3>
+                            <p>Join us for an unforgettable event featuring inspiring speakers, engaging sessions, and meaningful networking opportunities. Join us for an unforgettable event featuring inspiring speakers, engaging sessions, and meaningful networking opportunities.</p>
+                          </div>
+                        </div>
+                        <div class="col-lg-3 d-flex align-items-center">
+                          <div class="event-schedule-bnt">
+                            <div class="btn-wrapper text-center">
+                              <button class="common-btn">View Details</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="event-schedule-List">
+                    <a href="eventDetails.html">
+                      <div class="row">
+                        <div class="col-lg-3 d-flex align-items-center">
+                          <div class="event-schedule-times">
+                            <li>
+                              <span><i class="fa-solid fa-clock"></i></span>
+                              <p>10:00AM</p>
+                            </li>
+                            <li>
+                              <span><i class="fa-solid fa-calendar-days"></i></span>
+                              <p>26 September</p>
+                            </li>
+                          </div>
+                        </div>
+                        <div class="col-lg-6">
+                          <div class="event-schedule-dec">
+                            <h3>Cybersecurity Protecting Data & Privacy</h3>
+                            <p>Join us for an unforgettable event featuring inspiring speakers, engaging sessions, and meaningful networking opportunities.</p>
+                          </div>
+                        </div>
+                        <div class="col-lg-3 d-flex align-items-center">
+                          <div class="event-schedule-bnt">
+                            <div class="btn-wrapper text-center">
+                              <button class="common-btn">View Details</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">
+                  <div class="event-schedule-List">
+                    <a href="eventDetails.html">
+                      <div class="row">
+                        <div class="col-lg-3 d-flex align-items-center">
+                          <div class="event-schedule-times">
+                            <li>
+                              <span><i class="fa-solid fa-clock"></i></span>
+                              <p>10:00AM</p>
+                            </li>
+                            <li>
+                              <span><i class="fa-solid fa-calendar-days"></i></span>
+                              <p>20 September</p>
+                            </li>
+                          </div>
+                        </div>
+                        <div class="col-lg-6">
+                          <div class="event-schedule-dec">
+                            <h3>Occasion Organizer</h3>
+                            <p>Plan, manage, and enjoy weddings, birthdays, corporate events, and celebrations seamlessly with Occasion Organizer's easy, organized event schedules.</p>
+                          </div>
+                        </div>
+                        <div class="col-lg-3 d-flex align-items-center">
+                          <div class="event-schedule-bnt">
+                            <div class="btn-wrapper text-center">
+                              <button class="common-btn">View Details</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="event-schedule-List">
+                    <a href="eventDetails.html">
+                      <div class="row">
+                        <div class="col-lg-3 d-flex align-items-center">
+                          <div class="event-schedule-times">
+                            <li>
+                              <span><i class="fa-solid fa-clock"></i></span>
+                              <p>10:00AM</p>
+                            </li>
+                            <li>
+                              <span><i class="fa-solid fa-calendar-days"></i></span>
+                              <p>26 September</p>
+                            </li>
+                          </div>
+                        </div>
+                        <div class="col-lg-6">
+                          <div class="event-schedule-dec">
+                            <h3>Cybersecurity Protecting Data & Privacy</h3>
+                            <p>Join us for an unforgettable event featuring inspiring speakers, engaging sessions, and meaningful networking opportunities.</p>
+                          </div>
+                        </div>
+                        <div class="col-lg-3 d-flex align-items-center">
+                          <div class="event-schedule-bnt">
+                            <div class="btn-wrapper text-center">
+                              <button class="common-btn">View Details</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="event-schedule-List">
+                    <a href="eventDetails.html">
+                      <div class="row">
+                        <div class="col-lg-3 d-flex align-items-center">
+                          <div class="event-schedule-times">
+                            <li>
+                              <span><i class="fa-solid fa-clock"></i></span>
+                              <p>10:00AM</p>
+                            </li>
+                            <li>
+                              <span><i class="fa-solid fa-calendar-days"></i></span>
+                              <p>26 September</p>
+                            </li>
+                          </div>
+                        </div>
+                        <div class="col-lg-6">
+                          <div class="event-schedule-dec">
+                            <h3>Cybersecurity Protecting Data & Privacy</h3>
+                            <p>Join us for an unforgettable event featuring inspiring speakers, engaging sessions, and meaningful networking opportunities. Join us for an unforgettable event featuring inspiring speakers, engaging sessions, and meaningful networking opportunities.</p>
+                          </div>
+                        </div>
+                        <div class="col-lg-3 d-flex align-items-center">
+                          <div class="event-schedule-bnt">
+                            <div class="btn-wrapper text-center">
+                              <button class="common-btn">View Details</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="event-schedule-List">
+                    <a href="eventDetails.html">
+                      <div class="row">
+                        <div class="col-lg-3 d-flex align-items-center">
+                          <div class="event-schedule-times">
+                            <li>
+                              <span><i class="fa-solid fa-clock"></i></span>
+                              <p>10:00AM</p>
+                            </li>
+                            <li>
+                              <span><i class="fa-solid fa-calendar-days"></i></span>
+                              <p>26 September</p>
+                            </li>
+                          </div>
+                        </div>
+                        <div class="col-lg-6">
+                          <div class="event-schedule-dec">
+                            <h3>Cybersecurity Protecting Data & Privacy</h3>
+                            <p>Join us for an unforgettable event featuring inspiring speakers, engaging sessions, and meaningful networking opportunities.</p>
+                          </div>
+                        </div>
+                        <div class="col-lg-3 d-flex align-items-center">
+                          <div class="event-schedule-bnt">
+                            <div class="btn-wrapper text-center">
+                              <button class="common-btn">View Details</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="pagination-bar">
+                <nav aria-label="navigation">
+                  <ul class="pagination">
+                    <li class="page-item">
+                      <a class="page-link" href="#" aria-label="Previous">
+                        <span aria-hidden="true">&laquo;</span>
+                      </a>
+                    </li>
+                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item">
+                      <a class="page-link" href="#" aria-label="Next">
+                        <span aria-hidden="true">&raquo;</span>
+                      </a>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- schedule area End  -->
+    <!-- footer section start  -->
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3">
+            <div class="footer-about">
+              <div class="footer-info">
+                <h5 class="footer-caption">About Event</h5>
+                <p>About Event highlights the purpose, key activities, and impact, bringing people together to celebrate, learn</p>
+              </div>
+              <div class="socialMedia">
+                <ul class="d-flex">
+                  <li>
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="footer-about">
+              <div class="footer-info">
+                <h5 class="footer-caption">Event Gallery</h5>
+              </div>
+              <div class="footer-gallery-event">
+                <div class="row g-1">
+                  <div class="col-lg-3">
+                    <div class="photo-gallery-items">
+                      <a href="Assets/images/home-page/photoGallary/photo-gallery-9.jpg" data-fancybox="gallery">
+                        <img class="img-fluid" src="Assets/images/home-page/photoGallary/photo-gallery-9.jpg" alt="Image 9" />
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-lg-3">
+                    <div class="photo-gallery-items">
+                      <a href="Assets/images/home-page/photoGallary/photo-gallery-2.jpg" data-fancybox="gallery">
+                        <img class="img-fluid" src="Assets/images/home-page/photoGallary/photo-gallery-2.jpg" alt="Image 2" />
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-lg-3">
+                    <div class="photo-gallery-items">
+                      <a href="Assets/images/home-page/photoGallary/photo-gallery-3.jpg" data-fancybox="gallery">
+                        <img class="img-fluid" src="Assets/images/home-page/photoGallary/photo-gallery-3.jpg" alt="Image 3" />
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-lg-3">
+                    <div class="photo-gallery-items">
+                      <a href="Assets/images/home-page/photoGallary/photo-gallery-4.jpg" data-fancybox="gallery">
+                        <img class="img-fluid" src="Assets/images/home-page/photoGallary/photo-gallery-4.jpg" alt="Image 4" />
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-lg-3">
+                    <div class="photo-gallery-items">
+                      <a href="Assets/images/home-page/photoGallary/photo-gallery-5.jpg" data-fancybox="gallery">
+                        <img class="img-fluid" src="Assets/images/home-page/photoGallary/photo-gallery-5.jpg" alt="Image 5" />
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-lg-3">
+                    <div class="photo-gallery-items">
+                      <a href="Assets/images/home-page/photoGallary/photo-gallery-6.jpg" data-fancybox="gallery">
+                        <img class="img-fluid" src="Assets/images/home-page/photoGallary/photo-gallery-6.jpg" alt="Image 6" />
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-lg-3">
+                    <div class="photo-gallery-items">
+                      <a href="Assets/images/home-page/photoGallary/photo-gallery-7.jpg" data-fancybox="gallery">
+                        <img class="img-fluid" src="Assets/images/home-page/photoGallary/photo-gallery-7.jpg" alt="Image 7" />
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-lg-3">
+                    <div class="photo-gallery-items">
+                      <a href="Assets/images/home-page/photoGallary/photo-gallery-8.jpg" data-fancybox="gallery">
+                        <img class="img-fluid" src="Assets/images/home-page/photoGallary/photo-gallery-8.jpg" alt="Image 8" />
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 d-flex justify-content-end">
+            <div class="footer-contact">
+              <div class="footer-info">
+                <h5 class="footer-caption">Keep In Touch</h5>
+                <div class="footer-contact-items">
+                  <span><i class="fa-solid fa-map-location"></i></span>
+                  <p>24 North Kafrul, 3rd Floor, Dhaka-1206, Bangladesh.</p>
+                </div>
+                <div class="footer-contact-items">
+                  <span><i class="fa-solid fa-phone-volume"></i></span>
+                  <a href="tel:+8801714001209">+88 01714001209</a>
+                </div>
+                <div class="footer-contact-items">
+                  <span><i class="fa-solid fa-envelope"></i></span>
+                  <a href="mailto:eventmanagement.com">info@eventmanagement.com</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- footer section End  -->
+
+    <!-- jquery js Start  -->
+    <script src="Assets/js/jquery-3.6.0.min.js"></script>
+    <!-- jquery js End-->
+
+    <!-- Bootstrap js Start  -->
+    <script src="Assets/js/bootstrap.min.js"></script>
+    <!-- Bootstrap js End-->
+
+    <!-- Fancybox JS Start-->
+    <script src="Assets/js/fancybox.umd.js"></script>
+    <!-- Fancybox JS End-->
+
+    <!-- js Link UP Start  -->
+    <script src="Assets/js/script.js"></script>
+    <!-- js Link UP End-->
+  </body>
+</html>
