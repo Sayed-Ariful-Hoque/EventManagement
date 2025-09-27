@@ -212,14 +212,14 @@ a {
 }
 /* Navigation main style */
 
-.main-menu .nav-menu {
+.main-navigation .nav-menu {
   display: flex;
 }
 
-.main-menu .nav-menu li {
+.main-navigation .nav-menu li {
   position: relative;
 }
-.main-menu .nav-menu a {
+.main-navigation .nav-menu a {
   display: block;
   color: #fff;
   font-size: 16px;
@@ -230,12 +230,12 @@ a {
   transition: 0.3s;
 }
 
-.main-menu .nav-menu a:hover {
+.main-navigation .nav-menu a:hover {
   background: #444;
   color: #ffd700;
 }
 /* menu-dropdown menu style */
-.main-menu .submenu {
+.main-navigation .submenu {
   position: absolute;
   top: 100%;
   left: 0;
@@ -245,17 +245,17 @@ a {
   box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
   z-index: 999;
 }
-.main-menu .submenu a {
+.main-navigation .submenu a {
   font-size: 16px;
   font-weight: 600;
   padding: 10px 15px;
   color: #333;
 }
-.main-menu .submenu a:hover {
+.main-navigation .submenu a:hover {
   background: #444;
   color: #ffd700;
 }
-.main-menu .menu-dropdown:hover .submenu {
+.main-navigation .menu-dropdown:hover .submenu {
   display: block;
 }
 
@@ -401,26 +401,24 @@ a {
   position: relative;
   width: 100%;
   height: 90vh;
-  overflow: hidden;
   margin-bottom: 50px;
 }
 
-.hero-slider .items {
+/* .hero-slider .items {
   position: relative;
-  height: 90vh;
   overflow: hidden;
-}
+} */
 .overlay-slider {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.6);
 }
 .slider-img img {
   width: 100%;
-  height: 90vh;
+  aspect-ratio: 2.45;
   object-fit: cover;
   filter: brightness(0.65);
   transition: transform 0.5s ease;
@@ -514,35 +512,6 @@ a {
   background: var(--black-color);
 }
 
-.autoplay-progress {
-  position: absolute;
-  right: 16px;
-  bottom: 16px;
-  z-index: 10;
-  width: 48px;
-  height: 48px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: bold;
-  color: var(--swiper-theme-color);
-}
-
-.autoplay-progress svg {
-  --progress: 0;
-  position: absolute;
-  left: 0;
-  top: 0px;
-  z-index: 10;
-  width: 100%;
-  height: 100%;
-  stroke-width: 4px;
-  stroke: var(--swiper-theme-color);
-  fill: none;
-  stroke-dashoffset: calc(125.6px * (1 - var(--progress)));
-  stroke-dasharray: 125.6;
-  transform: rotate(-90deg);
-}
 /* hero Area End */
 
 /* about-us-area  start */
@@ -1005,7 +974,6 @@ a {
   left: -12px;
 }
 /* about page area start  */
-
 /* our-journey-area */
 .our-journey-area {
   padding: 100px 0;
@@ -1101,6 +1069,7 @@ a {
   object-position: center;
 }
 .why-choose-eventh-list {
+  width: 100%;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   padding: 15px;
   border-radius: 5px;
@@ -1120,8 +1089,8 @@ a {
   font-weight: 600;
   margin-bottom: 10px;
 }
-/* about page area end  */
-/* services page area end  */
+/*========== about page area end  ==========*/
+/*========== services page area start ==========*/
 .complete-event-solutions-area {
   padding: 50px 0;
 }
@@ -1131,7 +1100,6 @@ a {
   text-align: center;
 }
 .event-solutions-items {
-  /* border: 1px solid var(--border-color); */
   padding: 15px;
   border-radius: 3px;
   margin-bottom: 20px;
@@ -1223,8 +1191,8 @@ a {
   font-size: 15px;
   color: var(--text-color);
 }
-/* services page area end  */
-/* organizer page  */
+/*========== services page area end ==========*/
+/*========== organizer page area start ==========*/
 .event-organizer-page-area {
   padding: 50px 0;
   background: var(--white-color);
@@ -1232,8 +1200,8 @@ a {
 .event-organizer-member-list {
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
-/* organizer page  */
-/* event page area start  */
+/*========== organizer page end ==========*/
+/*========== event page area start ==========*/
 .the-event-area {
   padding: 50px 0;
 }
@@ -1241,6 +1209,12 @@ a {
   background: #092c11;
   margin-bottom: 30px;
   transition: all ease 0.4s;
+}
+.event-list-item-imgs img {
+  width: 100%;
+  aspect-ratio: 1.5;
+  object-fit: cover;
+  object-position: center;
 }
 .event-list-item-info h3 {
   color: var(--white-color);
@@ -1279,27 +1253,26 @@ a {
   color: #e0dede;
   font-size: 16px;
 }
-
-/* event page area end  */
-/* event details page area start  */
+/*========== event page area end ==========*/
+/*========== event details page area start ==========*/
 .event-details-area {
   padding: 50px 0;
 }
 .event-details-info .event-info-imgs {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 .event-details-info .event-info-imgs img {
   width: 100%;
 }
 .event-setails-decover {
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 }
-.event-details-info h2 {
-  font-size: 25px;
+.event-details-info h3 {
+  font-size: 24px;
   font-weight: 600;
   color: var(--black-color);
   line-height: 1.3;
-  margin-bottom: 5px;
+  margin-bottom: 8px;
   display: inline-block;
 }
 .event-details-info p {
@@ -1360,8 +1333,8 @@ a {
 .event-details-sidebar .btn-wrapper {
   margin-top: 50px;
 }
-/* event details page area end  */
-/* Blog details page area start  */
+/*========== event details page area end ==========*/
+/*========== Blog details page area start ==========*/
 .blog-details-area {
   padding: 50px 0;
 }
@@ -1408,10 +1381,15 @@ a {
 
 /* blog-details-sidebar */
 .serarch-btn {
+  position: relative;
   display: flex;
   margin-bottom: 50px;
 }
+.blog-details-sidebar {
+  overflow: hidden;
+}
 .blog-details-sidebar input {
+  width: 100%;
   border: none;
   outline: none;
   background: #00000013;
@@ -1424,6 +1402,10 @@ a {
   background: #092c11;
   padding: 8px 20px;
   color: var(--white-color);
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 99;
 }
 .serarch-btn button:hover {
   background: #0c461a;
@@ -1457,9 +1439,6 @@ a {
 }
 .blog-Details-catagory ul li a:hover {
   color: var(--secondary-color);
-}
-.latest-blog {
-  margin-bottom: 50px;
 }
 .latest-blog h3 {
   background: #092c11;
@@ -1531,8 +1510,8 @@ a {
 .latest-blog-details-tag ul li:hover a {
   color: var(--secondary-color);
 }
-/* Blog details page area end  */
-/* Event Schedule page area start  */
+/*========== Blog details page area end ==========*/
+/*========== Event Schedule page area start ==========*/
 .event-schedule-area {
   padding: 50px 0;
 }
@@ -1599,9 +1578,8 @@ a {
   text-overflow: ellipsis;
 }
 
-/* Event Schedule page area end  */
-
-/* Privacy Policy page area start  */
+/*========== Event Schedule page area End ==========*/
+/*========== Privacy Policy page area start ==========*/
 .privacy-policy-area {
   background: #fff;
   padding: 40px 0;
@@ -1643,8 +1621,8 @@ a {
   list-style: disclosure-closed;
   color: #464646fd;
 }
-/* Privacy Policy page area End */
-/*  terms conditions page area End */
+/*========== Privacy Policy page area End ==========*/
+/*========== terms conditions page area start ==========*/
 .terms-conditions-area {
   background: #fff;
   padding: 40px 0;
@@ -1686,8 +1664,8 @@ a {
   list-style: disclosure-closed;
   color: #464646fd;
 }
-/*  terms conditions page area End */
-/* contact page area start */
+/* =================terms conditions page area End ====================== */
+/* =================c ontact page area start====================== */
 .contact-details-area {
   padding: 50px 0;
 }
@@ -1773,8 +1751,8 @@ a {
 .contact-locatinon {
   margin-top: 50px;
 }
-/* contact page area End */
-/* footer Area start  */
+/* =================contact page area End====================== */
+/* =================footer Area start====================== */
 footer {
   padding: 50px 0;
   background: var(--black-color);
@@ -1827,7 +1805,94 @@ footer {
 .footer-info a:hover {
   color: var(--secondary-color);
 }
-/* footer Area End  */
+/* =================footer Area End ======================== */
+
+/*=================== Responive Device ===================== */
+.mobile-menu {
+  display: none;
+}
+.mobile-menu-bar {
+  padding: 10px;
+}
+.mobile-navigation {
+  position: fixed;
+  top: 0;
+  left: -270px;
+  width: 270px;
+  height: 100%;
+  background: #fff;
+  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  transition: 0.4s ease;
+  display: flex;
+  flex-direction: column;
+}
+.mobile-navigation.active {
+  left: 0;
+}
+
+/* Header */
+.nav-header {
+  background: linear-gradient(60deg, #188847, #224092, #188847);
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 20px;
+}
+.menu-toggle {
+  background: none;
+  color: #fff;
+  font-size: 24px;
+  border: none;
+}
+.close-btn {
+  font-size: 22px;
+  background: transparent;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* Menu List */
+.mobile-nav-menu {
+  padding: 20px;
+  margin: 0;
+}
+.mobile-nav-menu li {
+  border-bottom: 1px solid #e5e5e5;
+  margin-bottom: 25px;
+  padding-bottom: 2px;
+}
+.mobile-nav-menu li a {
+  justify-content: space-between;
+  font-size: 16px;
+  font-weight: 600;
+  color: #000;
+  transition: all ease 0.3s;
+}
+.mobile-nav-menu li a:hover {
+  color: var(--secondary-color);
+}
+
+/* Dropdown */
+.mobile-menu-dropdown .submenu {
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  padding-left: 15px;
+}
+.mobile-menu-dropdown.open .submenu {
+  max-height: 400px;
+  padding-top: 20px;
+}
+.mobile-menu-dropdown .submenu li {
+  border: none;
+  margin-bottom: 5px;
+}
+.mobile-menu-dropdown .submenu a {
+  color: #2e2d2d;
+  font-size: 14px;
+  font-weight: 600;
+}
 
 /* XL Device :1200px. */
 @media (min-width: 1200px) and (max-width: 1500px) {
@@ -1836,14 +1901,14 @@ footer {
 /* LG Device :992px. */
 @media (min-width: 992px) and (max-width: 1200px) {
   /* home page start ============ */
-  .main-menu .nav-menu a {
-    padding: 20px 10px;
+  .main-navigation .nav-menu a {
+    padding: 20px 13px;
   }
-  /* .hero-slider .items {
-    height: 50vh;
-  } */
+  .main-navigation .menu-dropdown .submenu a {
+    padding: 12px;
+  }
   .about-us-event-Imgs img {
-    aspect-ratio: 0.69;
+    aspect-ratio: 0.66;
   }
   .upcoming-events .upcoming-events-Imgs img {
     aspect-ratio: 1.5;
@@ -1851,16 +1916,356 @@ footer {
   .meber-list-imgs img {
     aspect-ratio: 1.3;
   }
+  .main-navigation .nav-menu a {
+    padding: 20px 10px;
+  }
+  /* ======= About page ============= */
+  .choose-eventh-imgs img {
+    aspect-ratio: 0.66;
+  }
+  /* ====== service page ======= */
+  .individual-services-imgs img {
+    aspect-ratio: 0.84;
+  }
 }
 
 /* MD Device :768px. */
 @media (min-width: 768px) and (max-width: 991px) {
+  /* =======home page ============= */
+  .main-menu {
+    display: none;
+  }
+  .mobile-menu {
+    display: block;
+  }
+  .moblile-menu-bar span {
+    color: var(--white-color);
+    font-size: 30px;
+  }
+  .moblile-menu-bar span:hover {
+    color: #ffffffe1;
+  }
+  .slider-img img {
+    aspect-ratio: 1.5;
+  }
+  .about-us-event-info {
+    margin-bottom: 30px;
+  }
+  .about-us-event-Imgs {
+    margin-bottom: 30px;
+  }
+  .upcoming-events .upcoming-events-Imgs img {
+    aspect-ratio: 1.1;
+    border-radius: 15px;
+  }
+  .upcoming-events-info {
+    margin-top: 0px;
+  }
+  .upcoming-events-info h3::after {
+    bottom: -12px;
+  }
+  .more-details {
+    margin-top: 20px;
+  }
+  .event-organizer-info {
+    margin-bottom: 40px;
+  }
+  /* ====== About page ======= */
+  .our-journey-img-one {
+    width: 400px;
+  }
+  .our-journey-img-tow {
+    top: 67%;
+    left: 72%;
+  }
+  .our-journey-img-three img {
+    width: 180px;
+    height: 180px;
+  }
+  .our-journey-imges {
+    position: relative;
+    margin-bottom: 100px;
+  }
+  .event-memories-items {
+    margin-bottom: 30px;
+  }
+  .event-memories-items-info h4 {
+    margin-bottom: 10px;
+  }
+  .why-choose-eventh-info {
+    margin-bottom: 30px;
+  }
+  /* ====== Event page ======= */
+  .event-list-item-imgs img {
+    aspect-ratio: 1.1;
+  }
+  /* ====== schedule page ======= */
+  .schedule-sidebar {
+    margin-bottom: 30px;
+  }
+  .schedule-sidebar .nav-link {
+    width: auto;
+    margin-right: 10px;
+  }
+  /* ====== Contact page ======= */
+  .contact-information {
+    margin-top: 0;
+  }
+  .message-form {
+    margin-top: 50px;
+  }
 }
 
 /* Extra small Device. */
 @media (max-width: 767px) {
+  /* common banner  */
+  .common-banner-area h1 {
+    font-size: 30px;
+  }
+  .common-banner-area li {
+    font-size: 13px;
+  }
+  /* ====== home page ======= */
+  .main-menu {
+    display: none;
+  }
+  .mobile-menu {
+    display: block;
+  }
+  .slider-img img {
+    aspect-ratio: 0.7;
+  }
+  .about-us-event-Imgs {
+    margin-bottom: 30px;
+  }
+  .about-content {
+    margin-bottom: 10px;
+  }
+  .slider-captions h5 {
+    line-height: 1.3;
+    letter-spacing: 1px;
+    word-spacing: 5px;
+  }
+  .slider-captions h1 {
+    font-size: 30px;
+    padding: 0 10px;
+    line-height: 1.3;
+  }
+  .slider-captions p {
+    padding: 0px 10px;
+  }
+  .slider-captions .common-btn {
+    padding: 7px 15px;
+    font-size: 13px;
+  }
+
+  .upcoming-events .upcoming-events-Imgs {
+    border-radius: 0;
+  }
+  .upcoming-events .upcoming-events-Imgs img {
+    border-radius: 0;
+  }
+  .upcoming-events .swiper {
+    height: 570px;
+  }
+  .upcoming-events-info h3::after {
+    bottom: 60px;
+  }
+  .upcoming-events .swiper-pagination-vertical.swiper-pagination-bullets,
+  .swiper-vertical > .swiper-pagination-bullets {
+    display: none;
+  }
+  .event-organizer-info {
+    margin-bottom: 30px;
+  }
+  .footer-about {
+    margin-bottom: 40px;
+  }
+
+  /* ====== About page ======= */
+  .our-journey-img-one {
+    max-width: 270px;
+    margin-left: 12px;
+  }
+  .our-journey-img-tow {
+    max-width: 200px;
+    position: absolute;
+    top: 80%;
+    left: 65%;
+    transform: translateX(-50%) translateY(-50%);
+  }
+
+  .our-journey-img-three img {
+    width: 130px;
+    height: 130px;
+  }
+  .our-journey-imges {
+    position: relative;
+    margin-bottom: 100px;
+  }
+  .event-memories-items {
+    margin-bottom: 30px;
+  }
+  .event-memories-items-info h4 {
+    margin-bottom: 10px;
+  }
+  .why-choose-eventh-info {
+    margin-bottom: 30px;
+  }
+  /* ====== Service page ======= */
+  .event-solutions-items-imgs {
+    margin-bottom: 20px;
+  }
+
+  /* ====== Event page ======= */
+  .event-list-item-imgs {
+    margin-bottom: 20px;
+  }
+  .event-list-item-info h3 {
+    margin-bottom: 7px;
+  }
+  .event-list-item-info {
+    padding: 0 20px;
+  }
+  .event-list-item-details {
+    padding: 0 20px;
+  }
+  /* ====== Event Details page ======= */
+  .event-details-date ul li {
+    color: var(--white-color);
+  }
+  .event-details-date ul li p {
+    color: var(--white-color);
+  }
+  .event-details-info .event-info-imgs {
+    margin-bottom: 0;
+  }
+  .event-details-date {
+    margin-bottom: 20px;
+  }
+  /* ====== schedule page ======= */
+  .schedule-sidebar {
+    margin-bottom: 20px;
+  }
+  .event-schedule-times {
+    display: flex;
+    gap: 20px;
+  }
+  .event-schedule-times li {
+    display: flex;
+    font-size: 16px;
+  }
+  .event-schedule-bnt {
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+  }
+  .event-schedule-List .common-btn {
+    padding: 6px 30px;
+    font-size: 14px;
+    font-weight: 600;
+  }
+  /* ====== privacy-policy page ======= */
+  .privacy-policy {
+    padding: 25px;
+  }
+  /* ====== Blog Details page ======= */
+  .blog-details-content-info {
+    margin-bottom: 40px;
+  }
+  .latest-blogs-items {
+    margin-bottom: 20px;
+  }
+  .serarch-btn {
+    margin-bottom: 20px;
+  }
+  .latest-blogs-items-imgs {
+    margin-bottom: 10px;
+  }
+  .blog-details-meta-info ul li a {
+    font-size: 13px;
+  }
+  .blog-details-content-info h3 {
+    font-size: 23px;
+  }
+  .latest-blog-details-tag ul li {
+    padding: 6px 10px;
+  }
+
+  /* ====== Contact page ======= */
+  .contact-us {
+    margin-bottom: 50px;
+  }
+  .common-btn {
+    padding: 6px 24px;
+    font-size: 16px;
+  }
+  .contact-us {
+    display: flex;
+  }
 }
 
 /* SM Small Device :550px. */
 @media only screen and (min-width: 576px) and (max-width: 767px) {
+  /* ====== home page ======= */
+  .slider-img img {
+    aspect-ratio: 1;
+  }
+  /* ====== About page ======= */
+  .our-journey-img-one {
+    max-width: 300px;
+    margin-left: 12px;
+  }
+  .our-journey-img-tow {
+    max-width: 250px;
+    position: absolute;
+    top: 80%;
+    left: 65%;
+    transform: translateX(-50%) translateY(-50%);
+  }
+
+  .our-journey-img-three img {
+    width: 160px;
+    height: 160px;
+  }
+
+  /* ====== Event Details page ======= */
+  .latest-blog-details-tag ul li {
+    padding: 5px 12px;
+  }
+  .latest-blog-details-tag ul li a {
+    font-size: 12px;
+  }
+  .event-details-info h2 {
+    margin-bottom: 8px;
+  }
+  .event-details-info .event-info-imgs {
+    margin-bottom: 20px;
+  }
+  .event-details-date {
+    display: block;
+  }
+  .moblie-details-date {
+    display: none;
+  }
+  .event-details-info h3 {
+    font-size: 20px;
+  }
+  .event-details-date {
+    margin-bottom: 50px;
+  }
+  .schedule-sidebar .nav-link {
+    width: auto;
+    margin-right: 10px;
+  }
+  /* ====== schedule page ======= */
+
+  .event-schedule-bnt {
+    width: auto;
+  }
+
+  /* ====== Blog Deails page ======= */
+  .blog-details-meta-info ul li a {
+    font-size: 11px;
+  }
 }

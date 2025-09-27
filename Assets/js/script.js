@@ -30,6 +30,26 @@ $(document).ready(function () {
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 1000,
+    responsive: [
+      {
+        breakpoint: 992,
+        settings: {
+          slidesToShow: 5,
+        },
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 4,
+        },
+      },
+      {
+        breakpoint: 576,
+        settings: {
+          slidesToShow: 3,
+        },
+      },
+    ],
   });
 });
 
@@ -75,4 +95,31 @@ var swiper1 = new Swiper(".mySwiper1", {
       spaceBetween: 30,
     },
   },
+});
+
+// ================= mobile menu =================
+
+const menuToggle = document.getElementById("menuToggle");
+const closeNav = document.getElementById("closeNav");
+const mobileNav = document.getElementById("mobileNav");
+
+// Open menu
+menuToggle.addEventListener("click", () => {
+  mobileNav.classList.add("active");
+});
+
+// Close menu
+closeNav.addEventListener("click", () => {
+  mobileNav.classList.remove("active");
+});
+
+// Dropdown Toggle
+const dropdowns = document.querySelectorAll(".mobile-menu-dropdown .dropdown-toggle");
+
+dropdowns.forEach((dropdown) => {
+  dropdown.addEventListener("click", (e) => {
+    e.preventDefault();
+    const parent = dropdown.parentElement;
+    parent.classList.toggle("open");
+  });
 });
